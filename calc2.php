@@ -228,6 +228,7 @@
                value2Elem.value = "";
                operatorElem.value = "";
 
+
                updateResultInput();
            }
             value1Elem.value = eval(value1Elem.value + operatorElem.value + value2Elem.value);
