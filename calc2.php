@@ -130,10 +130,10 @@
             <button onclick="calculate()" id="result" class="calc-button">=</button>
         </th>
         <th>
-            <button onclick="setOperator(this)" value="n" class="calc-button">n</button>
+            <button onclick="setOperator(this)" value="^" class="calc-button">^</button>
         </th>
         <th>
-            <button onclick="setOperator(this)" value="k" class="calc-button">k</button>
+            <button onclick="setOperator(this)" value="√" class="calc-button">√</button>
         </th>
     </tr>
 </table>
@@ -215,15 +215,16 @@
             }
 
           
-           if (operatorElem.value === "n"){
+           if (operatorElem.value === "^"){
                value1Elem.value=Math.pow(value1Elem.value, value2Elem.value);
                value2Elem.value = "";
                operatorElem.value = "";
 
                updateResultInput();
+               updateResultInput();
            }
-           if(operatorElem.value === "k"){
-               value1Elem.value=Math.sqrt(value1Elem.value);
+           if(operatorElem.value === "√"){
+               value1Elem.value=Math.pow(value1Elem.value,1/value2Elem.value);
                value2Elem.value = "";
                operatorElem.value = "";
 
@@ -237,7 +238,7 @@
         }
 
         function validateOperator(operator) {
-            let allowedOperators = ["+", "-", "/", "*","n","k"];
+            let allowedOperators = ["+", "-", "/", "*","^","√"];
             return allowedOperators.includes(operator);
 
         }
