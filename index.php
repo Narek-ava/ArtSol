@@ -22,11 +22,11 @@
         #link-color{
             color:black;
         }
-        
+
     </style>
 
 </head>
- 
+
 <body style="background-color:#2a4a4e;">
    <form action="index.php" method="post">
       <br><input placeholder="Login" type="text" name="Login" class="design" ><br>
@@ -37,7 +37,7 @@
    </form>
    <form action="validate.php" method="post">
        <input id="n4" type="submit" value="Registration">
-   </form>    
+   </form>
     <?php
 
      session_start();
@@ -53,17 +53,17 @@
 
         }
        else {
+           echo "error";
        }
       }
-      function login()
-      {
-          if (isset($_SESSION['Login'])) {
 
-
-
+      if (isset($_SESSION['Login'])) {
+          $_SESSION['Login'] = $username;
+          header ('location:calc2.php');
+          exit;
           }
 
-      }
+
     ?>
 </body>
 </html>
