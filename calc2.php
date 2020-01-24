@@ -28,7 +28,7 @@
             border-bottom: 6px solid #332e2e;
         }
 
-        #result-input {
+        #result-block {
 
             height: 141px;
             width: 338px;
@@ -54,6 +54,9 @@
         #link-color {
             color: black;
         }
+        #root-template{
+            font-size:2px;
+        }
 
     </style>
 </head>
@@ -62,8 +65,10 @@
 <table align="center">
     <tr>
         <th colspan="4">
+<div id="result-block" >
 
-            <input id="result-input" disabled placeholder="0">
+
+</div>
 
     </tr>
     <tr>
@@ -142,7 +147,10 @@
 <input type="hidden" id="operator">
 <input type="hidden" id="value2">
 <input type="hidden" id="result">
+<div style="visibility: hidden">
+    <i id="root-template">Narek</i>
 
+</div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -159,7 +167,6 @@
                 }
             } else {
                 let value1Elem = document.getElementById("value1");
-                console.log(value1Elem.value);
                 if (validateValue(value1Elem.value, newValue)) {
                     value1Elem.value += newValue;
                 }
@@ -181,28 +188,40 @@
         }
 
         function updateResultInput() {
-            let resultInputElem = document.getElementById("result-input");
-
-            let value1 = document.getElementById("value1").value;
+            let resultInputElem = document.getElementById("result-block");
+            let value1 = document.getElementById("value1").value;//3
             let value2 = document.getElementById("value2").value;
-            let operator = document.getElementById("operator").value;
-            let result = "";
+            let operator = document.getElementById("operator").value;//arma
+            let result = "";//""
 
+            if(operator === "√" ) {
+                let rootTemplateElem = document.getElementById('root-template');//<i id="root-template">3</i>
+                rootTemplateElem.innerHTML = value1;//<i id="root-template">3</i>
+                // console.log(rootTemplateElem);
+                value1 = rootTemplateElem;//<i id="root-template">3</i>
+                // console.log(value1)//<i id="root-template">3</i>
+            }
             if (value1) {
-                result = result + value1;
+                console.log(value1);
+
+                result = result + value1;//<i id="root-template">3</i>
+
             }
 
             if (operator) {
-                result = result + operator;
-
-                if (value2) {
+                result = result + operator;//<i id="root-template">3</i>+armat
+                console.log(result);
+               if (value2) {
                     result = result + value2;
                 }
             }
 
-            resultInputElem.value = result;
+            console.log(result);
+            resultInputElem.innerHTML = result;//<div id="result-block" >
 
-            return true;
+                //<i id="root-template">3</i>+armat
+                //</div>
+
         }
 
         function calculate() {
@@ -224,7 +243,7 @@
                updateResultInput();
            }
            if(operatorElem.value === "√"){
-               value1Elem.value=Math.pow(value1Elem.value,1/value2Elem.value);
+               value1Elem.value=Math.pow(value2Elem.value,1/value1Elem.value);
                value2Elem.value = "";
                operatorElem.value = "";
 
