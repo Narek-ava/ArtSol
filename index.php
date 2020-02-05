@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .design{
-            border-radius: 12px;
-            height:44px;
-            width:30%;
-            font-size:20px;
-        }
-        #n3{
-            border-radius:12px;
-            height:50px;
-            width:10%;
-        }
-        #n4{
-            border-radius:12px;
-            height:50px;
-            width:30%;
-        }
-        #link-color{
-            color:black;
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .topnav {
+            overflow:hidden ;
+            background-color: #333;
+        }
+
+
+        .topnav a {
+            float: left;
+            display: block;
+            color:;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+
+        }
+
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+        .content {
+            background-color: #ddd;
+            padding: 10px;
+            height: 488px; /* Should be removed. Only for demonstration */
+        }
+
+
+        .footer {
+            background-color: #a5a0a0;
+            padding: 10px;
+        }
     </style>
-
 </head>
+<body>
 
-<body style="background-color:#2a4a4e;">
-   <form action="index.php" method="post">
-      <br><input placeholder="Login" type="text" name="Login" class="design" ><br>
-      <input placeholder="Password" name="Password" class="design" type="password"><br>
-       <br><input class="design" onclick="submit"  type="submit" value="Enter"><br>
-   </form>
-   <form action="validate.php" method="post">
-       <input id="n4" type="submit" value="Registration">
-   </form>
-    <?php
+<div class="topnav">
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Pricings</a>
+    <a href="#">Contacts</a>
+</div>
 
-     session_start();
-     require('chek.php');
-      if (isset($_POST['Login']) and isset($_POST['Password'])) {
-        $username = $_POST['Login'];
-        $password = $_POST['Password'];
-        $query = "SELECT*FROM `register-bg` WHERE Login='$username' and Password='$password'";
-        $result = mysqli_query($connection,$query) or die (msqli_error($connection));
-        $count = mysqli_num_rows($result);
+<div class="content">
+    <h2>Content</h2>
+    <p></p>
+</div>
 
-        if ($count == 1) {
-           $_SESSION['Login'] = $username;
-           die();
-        }
-       else {
-           echo "error";
+<div class="footer">
+    <p>Narek Pduction :)</p>
+</div>
 
-       }
-      }
-
-      if (isset($_SESSION['Login'])) {
-          $_SESSION['Login'] = $username;
-          header ('location:calc2.php');
-
-          }
- ?>
 </body>
 </html>
 
