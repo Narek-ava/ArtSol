@@ -13,22 +13,8 @@ table td {
     background-size: 100% 100%;
 }
 
-.EndElement {
-    background-image: url('https://gtdforcios.files.wordpress.com/2014/01/finish-line.jpg?w=478');
-    background-size: 100% 100%;
-}
-
 .Block {
     background-image: url("https://www.backwoodshome.com/bhm/wp-content/uploads/2015/12/blocks-bricks-brickwall-761142-1068x712.jpg");
     background-size: 100% 100%;
 }
 
-.step {
-    background-image: url("https://cdn3.iconfinder.com/data/icons/the-human-body-line/128/footprint-steps-512.png");
-    background-size: 100% 100%;
-}
-.del{
-    border: 2px solid black;
-    padding: 30px;
-    background: aquamarine;
-}
