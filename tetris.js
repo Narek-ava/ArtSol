@@ -6,6 +6,7 @@ let matrix = [];
 let randomJ = Math.floor(Math.random() * 5);
 let wallI = 0;
 let carCurrentJ = 2;
+let algorithm ;
 console.log(randomJ);
 function main() {
     createMatrix();
@@ -14,8 +15,11 @@ function main() {
 
      document.addEventListener("keydown", (e) => {
            if (e.code === 'Space') {
-               let play =  setInterval(() => {
+               algorithm =  setInterval(() => {
                    startAlgorithm();
+                   if (isFinished()){
+                       stopGame(algorithm);
+                   }
 
                }, 50);
 
@@ -141,5 +145,5 @@ function isFinished() {
 
  }
  function stopGame(){
-     clearInterval(play);
+     clearInterval(algorithm);
  }
