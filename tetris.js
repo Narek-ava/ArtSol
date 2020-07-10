@@ -10,19 +10,20 @@ console.log(randomJ);
 function main() {
     createMatrix();
     console.log(matrix);
-
     setCar();
 
+     document.addEventListener("keydown", (e) => {
+           if (e.code === 'Space') {
+               let play =  setInterval(() => {
+                   startAlgorithm();
 
-    document.addEventListener("keydown", function(e) {
-        if (e.code === 'Space') {
-            setInterval(function(){
-                startAlgorithm();
-                }, 50) ;
+               }, 50);
 
 
-        }
-   });
+           }
+
+       });
+
 
     document.addEventListener("keydown", function(press){
 
@@ -69,12 +70,16 @@ function startAlgorithm() {
             document.getElementById(cellBack).classList.remove("Block");
 
         }
+        if(matrix[wallI][randomJ] === 1){
+            matrix[wallI][randomJ] = 0;
+        }
     wallI++
     if(wallI === 10){
         document.getElementById(cell).classList.remove("Block");
         randomJ = randomNum();
         wallI = 0;
-      }
+       }
+
     }
 
 function moveCarLeft(){
@@ -113,12 +118,19 @@ function isOnMatrixRight(carCurrentJ) {
     return carCurrentJ >=0 && carCurrentJ < 10 && matrix[9][carCurrentJ + 1] === 0;
 }
 
-function isFinished(curNum) {
-      if (matrix[wallI][randomJ] === 1 ){
-          return matrix[wallI][randomJ] === 0;
+function isFinished() {
+    let i = 9;
+    let arr = []
+    for (let j = 0; j < 5 ; j++) {
+        if(matrix[i][j] === 0)
+            arr.push(0);
+    }
+      if (arr.length === 5){
+          return true;
+      }
     }
 
-}
+
  function setCar() {
     matrix [9][2] = 1;
     document.getElementById("cell_9_2").classList.add('car')
@@ -127,4 +139,7 @@ function isFinished(curNum) {
  function randomNum(){
     return Math.floor(Math.random() * 5);
 
+ }
+ function stopGame(){
+     clearInterval(play);
  }
