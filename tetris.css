@@ -1,11 +1,14 @@
 table {
     border-collapse: collapse;
+
 }
 
 table td {
-    border: NaN;
-    padding: 40px;
+    border: black;
+    padding: 32px;
     background: #313333;
+
+
 }
 
 .car {
@@ -18,3 +21,11 @@ table td {
     background-size: 100% 100%;
 }
 
+#road{
+
+
+
+}
+.road2{
+    background-image: url("https://img2.pngio.com/road-lines-transparent-png-clipart-free-download-ywd-road-lines-png-420_420.png");
+}

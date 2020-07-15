@@ -3,7 +3,8 @@ window.onload = main;
 const M = 10;
 const N = 5;
 let matrix = [];
-let randomJ = Math.floor(Math.random() * 5);
+let randomJ =  Math.floor(Math.random() * N);
+let randomJ2 =  Math.floor(Math.random() * N);
 let wallI = 0;
 let carCurrentJ = 2;
 let algorithm ;
@@ -17,12 +18,12 @@ function main() {
            if (e.code === 'Space') {
                algorithm =  setInterval(() => {
                    startAlgorithm();
+                   // startAlgorithm(randomJ2);
                    if (isFinished()){
                        stopGame(algorithm);
                    }
 
-               }, 200);
-
+               }, 150);
 
            }
 
@@ -53,7 +54,10 @@ function createMatrix() {
             matrix[i][j] = 0;
             let cell = document.createElement('td');
             cell.id = 'cell_' + i + '_' + j;
-           // console.log(cell.id);
+            // if (j === 2) {
+            //     document.getElementById(cell.id).classList.add("road2");
+            //     // console.log(cell.id);
+            // }
             row.appendChild(cell);
         }
     }
@@ -81,6 +85,7 @@ function startAlgorithm() {
     if(wallI === 10){
         document.getElementById(cell).classList.remove("Block");
         randomJ = randomNum();
+        randomJ2 = randomNum();
         wallI = 0;
        }
 
@@ -125,25 +130,34 @@ function isOnMatrixRight(carCurrentJ) {
 function isFinished() {
     let i = 9;
     let arr = []
-    for (let j = 0; j < 5 ; j++) {
+    for (let j = 0; j < N ; j++) {
         if(matrix[i][j] === 0)
             arr.push(0);
     }
-      if (arr.length === 5){
+      if (arr.length === N){
           return true;
       }
     }
 
 
  function setCar() {
-    matrix [9][2] = 1;
+    matrix [9][carCurrentJ] = 1;
     document.getElementById("cell_9_2").classList.add('car')
  }
 
  function randomNum(){
-    return Math.floor(Math.random() * 5);
+    return Math.floor(Math.random() * N);
 
  }
  function stopGame(){
      clearInterval(algorithm);
  }
+function setLines(){
+    for (let i = 0; i < M ; i++) {
+        for (let j = 0; j < N ; j++) {
+            if (j === 2){
+
+            }
+        }
+    }
+}
