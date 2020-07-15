@@ -3,18 +3,18 @@ table {
 }
 
 table td {
-    border: 2px solid black;
-    padding: 30px;
-    background: aquamarine;
+    border: NaN;
+    padding: 40px;
+    background: #313333;
 }
 
 .car {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKjpyb1HouhLGk164-YLVJNyDAcsw6x7aynw&usqp=CAU');
+    background-image: url('https://www.seekpng.com/png/full/898-8989755_image-transparent-top-view-car-png.png');
     background-size: 100% 100%;
 }
 
 .Block {
-    background-image: url("https://www.backwoodshome.com/bhm/wp-content/uploads/2015/12/blocks-bricks-brickwall-761142-1068x712.jpg");
+    background-image: url("https://ya-webdesign.com/images250_/cars-plan-view-png-15.png");
     background-size: 100% 100%;
 }
 

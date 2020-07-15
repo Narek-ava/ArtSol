@@ -21,7 +21,7 @@ function main() {
                        stopGame(algorithm);
                    }
 
-               }, 50);
+               }, 200);
 
 
            }
