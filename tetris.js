@@ -6,29 +6,41 @@ let matrix = [];
 let randomJ =  Math.floor(Math.random() * N);
 let randomJ2 =  Math.floor(Math.random() * N);
 let wallI = 0;
+let wallI2 = 0;
 let carCurrentJ = 2;
 let algorithm ;
+let algorithm2 ;
+let carCount = 0 ;
+let keydownCount = 0
 console.log(randomJ);
 function main() {
     createMatrix();
     console.log(matrix);
     setCar();
+if (keydownCount === 0) {
+    document.addEventListener("keydown", (e) => {
+        keydownCount++;
+        if (e.code === 'Space') {
+            algorithm = setInterval(() => {
+                startAlgorithm();
+                startAlgorithm2();
 
-     document.addEventListener("keydown", (e) => {
-           if (e.code === 'Space') {
-               algorithm =  setInterval(() => {
-                   startAlgorithm();
-                   // startAlgorithm(randomJ2);
-                   if (isFinished()){
-                       stopGame(algorithm);
-                   }
+                if (isFinished()) {
+                    stopGame(algorithm);
+                }
 
-               }, 150);
+            }, 150);
+            algorithm2 = setInterval(() => {
+                startAlgorithm2();
 
-           }
+                if (isFinished()) {
+                    stopGame(algorithm2);
+                }
+            }, 150)
+        }
 
-       });
-
+    });
+}
 
     document.addEventListener("keydown", function(press){
 
@@ -81,15 +93,44 @@ function startAlgorithm() {
         if(matrix[wallI][randomJ] === 1){
             matrix[wallI][randomJ] = 0;
         }
-    wallI++
+    wallI++;
     if(wallI === 10){
         document.getElementById(cell).classList.remove("Block");
         randomJ = randomNum();
-        randomJ2 = randomNum();
         wallI = 0;
+        carCount++;
+        document.getElementById("score").innerHTML = carCount;
        }
 
     }
+function startAlgorithm2() {
+
+    let back = wallI2 - 1;
+    let cell = 'cell_' + wallI2 + '_'+ randomJ2;
+    let cellBack = 'cell_' + back + '_'+ randomJ2;
+    if(wallI2 === 0){
+
+
+        document.getElementById(cell).classList.add("Block");
+    }else{
+        matrix[wallI2 - 1][randomJ] = 0;
+        document.getElementById(cell).classList.add("Block");
+        document.getElementById(cellBack).classList.remove("Block");
+
+    }
+    if(matrix[wallI2][randomJ2] === 1){
+        matrix[wallI2][randomJ2] = 0;
+    }
+    wallI2++;
+    if(wallI2 === 10){
+        document.getElementById(cell).classList.remove("Block");
+        randomJ2 = randomNum();
+        wallI2 = 0;
+        carCount++;
+        document.getElementById("sccore").value = carCount;
+    }
+
+}
 
 function moveCarLeft(){
     let leftMove = carCurrentJ - 1;
@@ -151,6 +192,8 @@ function isFinished() {
  }
  function stopGame(){
      clearInterval(algorithm);
+     clearInterval(algorithm2);
+     keydownCount = 0;
  }
 function setLines(){
     for (let i = 0; i < M ; i++) {
