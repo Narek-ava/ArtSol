@@ -4,9 +4,11 @@ table {
 }
 
 table td {
-    border: black;
-    padding: 32px;
+
+    padding: 26px;
     background: #313333;
+    height: 28px ;
+    width: 6px;
 
 
 }
@@ -21,11 +23,6 @@ table td {
     background-size: 100% 100%;
 }
 
-#road{
-
-
-
-}
 .road2{
     background-image: url("https://img2.pngio.com/road-lines-transparent-png-clipart-free-download-ywd-road-lines-png-420_420.png");
 }

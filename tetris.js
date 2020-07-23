@@ -1,7 +1,7 @@
 window.onload = main;
 
-const M = 10;
-const N = 4;
+const M = 9;
+const N = 5;
 let matrix = [];
 let randomJ = Math.floor(Math.random() * N);
 let randomJ2 = Math.floor(Math.random() * N);
@@ -9,11 +9,12 @@ let wallI = 0;
 let wallI2 = 0;
 let carCurrentJ = 2;
 let algorithm;
-let interval = 90;
+let interval = 200;
 let carCount = 0;
 let keydownCount = 0;
 let highScore = [0];
 let coordinates = M - 1;
+
 
 function main() {
 
@@ -22,34 +23,33 @@ function main() {
 
     document.addEventListener("keydown", (e) => {
 
-        if (e.code === 'Space') {
+        if (e.code === 'Space' && keydownCount === 0) {
             algorithm = setInterval(() => {
                 wallI = startAlgorithm(wallI, randomJ);
-
-                if (wallI >= randomJ2 || wallI2 > 0) {
-                    wallI2 = startAlgorithm(wallI2, randomJ2);
-                }
+                wallI2 = startAlgorithm(wallI2, randomJ2);
+                wallI2 = startAlgorithm(wallI2, randomJ2);
 
                 if (isFinished()) {
                     stopGame();
                 }
             }, interval);
+
+            keydownCount++;
         }
     });
 
 
     document.addEventListener("keydown", function (press) {
-
-        if (press.code === "ArrowLeft" && isOnMatrixLeft(carCurrentJ)) {
-            moveCarLeft();
-        }
-        if (press.code === "ArrowRight" && isOnMatrixRight(carCurrentJ)) {
-            moveCarRight();
+        if (keydownCount > 0) {
+            if (press.code === "ArrowLeft" && isOnMatrixLeft(carCurrentJ)) {
+                moveCarLeft();
+            }
+            if (press.code === "ArrowRight" && isOnMatrixRight(carCurrentJ)) {
+                moveCarRight();
+            }
         }
     })
-
 }
-
 function createMatrix() {
     const table = document.getElementById('MATRIX');//rename to 'matrix'
 
@@ -93,6 +93,10 @@ function startAlgorithm(wallI, randomJ) {
         carCount++;
         document.getElementById("score").innerHTML = "Score" + " " + carCount;
 
+    }
+
+    if (isFinished()) {
+        wallI = 0;
     }
 
     return wallI;
@@ -156,24 +160,46 @@ function randomNum(random) {
 }
 
 function setCar() {
-
     matrix [coordinates][carCurrentJ] = 1;
-
-    document.getElementById("cell_9_2").classList.add('car')
+    let carPictureId = "cell_" + coordinates + "_" + 2;
+    document.getElementById(carPictureId).classList.add('car')
 }
 
 function stopGame() {
-    let carLastPictureId = "cell_" + coordinates + "_" + carCurrentJ;
+
     clearInterval(algorithm);
 
+    let carLastPictureId = "cell_" + coordinates + "_" + carCurrentJ;
     if (carCount > highScore[0]) {
         highScore[0] = carCount;
         document.getElementById("highScore").innerHTML = "HighScore" + " " + highScore[0];
 
     }
 
-    document.getElementById(carLastPictureId).classList.remove('car');
+
     keydownCount = 0;
     carCount = 0;
+    document.getElementById(carLastPictureId).classList.remove('car');
+    carCurrentJ = 2;
+    init();
     setCar();
+}
+
+function randomComb() {
+
+    return Math.floor(Math.random() * M - 1);
+
+}
+function init() {
+
+    for (let i = 0; i < M ; i++) {
+
+        for (let j = 0; j < N ; j++) {
+
+            let cell = "cell_" + i +"_" + j;
+            document.getElementById(cell).classList.remove("Block");
+
+        }
+    }
+
 }
