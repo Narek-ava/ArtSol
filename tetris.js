@@ -1,7 +1,7 @@
 window.onload = main;
 
 const M = 9;
-const N = 5;
+const N = 4;
 let matrix = [];
 let randomJ = Math.floor(Math.random() * N);
 let randomJ2 = Math.floor(Math.random() * N);
@@ -20,6 +20,7 @@ function main() {
 
     createMatrix();
     setCar();
+    lines();
 
     document.addEventListener("keydown", (e) => {
 
@@ -51,7 +52,7 @@ function main() {
     })
 }
 function createMatrix() {
-    const table = document.getElementById('MATRIX');//rename to 'matrix'
+    const table = document.getElementById('matrix');//rename to 'matrix'
 
     for (let i = 0; i < M; i++) {
         matrix[i] = [];
@@ -59,10 +60,20 @@ function createMatrix() {
         table.appendChild(row);
 
         for (let j = 0; j < N; j++) {
-            matrix[i][j] = 0;
-            let cell = document.createElement('td');
-            cell.id = 'cell_' + i + '_' + j;
-            row.appendChild(cell);
+
+            if (j === 2){
+                let road = document.createElement('td');
+                road.id = "road_" + i;
+                road.className = "road";
+                row.appendChild(road)
+            }
+                matrix[i][j] = 0;
+                let cell = document.createElement('td');
+                cell.id = 'cell_' + i + '_' + j;
+                cell.className = 'cell';
+                row.appendChild(cell);
+
+
         }
     }
 }
@@ -199,6 +210,17 @@ function init() {
             let cell = "cell_" + i +"_" + j;
             document.getElementById(cell).classList.remove("Block");
 
+        }
+    }
+
+}
+function lines(){
+    for (let i = 0; i < M ; i++) {
+        let road = "road_" + i;
+        if (i % 3 === 1){
+            document.getElementById(road).classList.add("grey");
+        }else {
+            document.getElementById(road).classList.add("white");
         }
     }
 
