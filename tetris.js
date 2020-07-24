@@ -14,13 +14,14 @@ let carCount = 0;
 let keydownCount = 0;
 let highScore = [0];
 let coordinates = M - 1;
+let box = [];
 
 
 function main() {
 
     createMatrix();
     setCar();
-    lines();
+    setLines();
 
     document.addEventListener("keydown", (e) => {
 
@@ -29,6 +30,7 @@ function main() {
                 wallI = startAlgorithm(wallI, randomJ);
                 wallI2 = startAlgorithm(wallI2, randomJ2);
                 wallI2 = startAlgorithm(wallI2, randomJ2);
+                moveLines();
 
                 if (isFinished()) {
                     stopGame();
@@ -51,6 +53,7 @@ function main() {
         }
     })
 }
+
 function createMatrix() {
     const table = document.getElementById('matrix');//rename to 'matrix'
 
@@ -61,17 +64,17 @@ function createMatrix() {
 
         for (let j = 0; j < N; j++) {
 
-            if (j === 2){
+            if (j === 2) {
                 let road = document.createElement('td');
                 road.id = "road_" + i;
                 road.className = "road";
                 row.appendChild(road)
             }
-                matrix[i][j] = 0;
-                let cell = document.createElement('td');
-                cell.id = 'cell_' + i + '_' + j;
-                cell.className = 'cell';
-                row.appendChild(cell);
+            matrix[i][j] = 0;
+            let cell = document.createElement('td');
+            cell.id = 'cell_' + i + '_' + j;
+            cell.className = 'cell';
+            row.appendChild(cell);
 
 
         }
@@ -201,27 +204,58 @@ function randomComb() {
     return Math.floor(Math.random() * M - 1);
 
 }
+
 function init() {
 
-    for (let i = 0; i < M ; i++) {
+    for (let i = 0; i < M; i++) {
 
-        for (let j = 0; j < N ; j++) {
+        for (let j = 0; j < N; j++) {
 
-            let cell = "cell_" + i +"_" + j;
+            let cell = "cell_" + i + "_" + j;
             document.getElementById(cell).classList.remove("Block");
 
         }
     }
 
 }
-function lines(){
-    for (let i = 0; i < M ; i++) {
+
+function setLines() {
+
+
+    for (let i = 0; i < M; i++) {
         let road = "road_" + i;
-        if (i % 3 === 1){
+        if (i % 2 !== 0) {
             document.getElementById(road).classList.add("grey");
-        }else {
-            document.getElementById(road).classList.add("white");
+            box.push({
+                i: i,
+                color: "grey"
+            })
+        } else {
+            document.getElementById(road).classList.remove("grey");
+            box.push({
+                i: i,
+                color: "white"
+            })
         }
+
     }
 
 }
+
+
+
+    function moveLines() {
+        box.map((obj) => {
+            if (obj.color === "grey"){
+                let road = "road_" + obj.i;
+                document.getElementById(road).classList.remove("grey");
+                return  obj.color = "white"
+            }else{
+                let road = "road_" + obj.i;
+                document.getElementById(road).classList.add("grey");
+                obj.color = "grey";
+            }
+        },)
+
+    }
+
