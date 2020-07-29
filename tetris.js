@@ -16,27 +16,32 @@ let lines;
 function main() {
 
     createMatrix();
-     setCar();
+    setCar();
     setLines();
 
     document.addEventListener("keydown", (e) => {
 
         if (e.code === 'Space' && keydownCount === 0) {
-            document.getElementById("gameOver").innerHTML = "";
-                startAlgorithm();
-                startAlgorithm();
-                startAlgorithm();
-                startAlgorithm();
-                lines = setInterval(() => {
-                    moveLines();
-                    },interval);
-            if (isFinished()) {
-                stopGame();
-            }
+            setCar();
             keydownCount++;
-        }
-    });
+            document.getElementById("gameOver").innerHTML = "";
+            startAlgorithm();
+            // startAlgorithm();
+            // startAlgorithm();
+            // startAlgorithm();
+            lines = setInterval(() => {
+                moveLines();
 
+            }, interval);
+
+
+
+        }
+
+    });
+    if (isFinished()){
+
+    }
 
     document.addEventListener("keydown", function (press) {
         if (keydownCount > 0) {
@@ -79,29 +84,27 @@ function createMatrix() {
 }
 
 function startAlgorithm() {
-    let carBox = ["block","lamborghini","bmw"];
+    let carBox = ["block", "lamborghini", "bmw"];
     let combination = Math.floor(Math.random() * carBox.length + 1);
     let wallI = 0;
     let randomJ = Math.floor(Math.random() * N);
 
     algorithm = setInterval(() => {
-      let currentBox = play(wallI,randomJ,combination,carBox);
-          wallI = currentBox.wallI;
-          randomJ = currentBox.randomJ;
-          combination = currentBox.combination;
-
-
-
+        let currentBox = play(wallI, randomJ, combination, carBox);
+        wallI = currentBox.wallI;
+        randomJ = currentBox.randomJ;
+        combination = currentBox.combination;
         if (isFinished()) {
             stopGame();
-
         }
     }, interval);
 
 
+
+
 }
 
-function play(wallI,randomJ,combination,carBox)  {
+function play(wallI, randomJ, combination, carBox) {
 
 
     let back = wallI - 1;
@@ -124,7 +127,7 @@ function play(wallI,randomJ,combination,carBox)  {
 
     if (wallI === M) {
         document.getElementById(cell).classList.remove(carBox[combination]);
-        combination =  Math.floor(Math.random() * carBox.length + 1);
+        combination = Math.floor(Math.random() * carBox.length);
         randomJ = Math.floor(Math.random() * N);
         wallI = 0;
         carCount++;
@@ -133,13 +136,19 @@ function play(wallI,randomJ,combination,carBox)  {
     }
 
     if (isFinished()) {
+        // clearInterval(lines);
+
         wallI = 0;
+        // clearInterval(algorithm);
+       // document.getElementById(cell).classList.remove(carBox[combination]);
+
+
     }
 
     return {
-        wallI:wallI,
-        randomJ:randomJ,
-        combination:combination
+        wallI: wallI,
+        randomJ: randomJ,
+        combination: combination
     };
 
 }
@@ -197,25 +206,24 @@ function setCar() {
 }
 
 function stopGame() {
-
-    clearInterval(algorithm);
+    //clearInterval(lines);
     clearInterval(lines);
-
+    clearInterval(algorithm);
     let carLastPictureId = "cell_" + coordinates + "_" + carCurrentJ;
     if (carCount > highScore[0]) {
         highScore[0] = carCount;
         document.getElementById("highScore").innerHTML = "HighScore" + " " + highScore[0];
 
     }
-
-
+    document.getElementById(carLastPictureId).classList.remove('car');
+    document.getElementById("gameOver").innerHTML = "Game Over";
     keydownCount = 0;
     carCount = 0;
-    document.getElementById(carLastPictureId).classList.remove('car');
     carCurrentJ = 2;
     init();
     setCar();
-    document.getElementById("gameOver").innerHTML = "Game Over";
+
+
 }
 
 function init() {
