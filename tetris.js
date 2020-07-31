@@ -4,14 +4,15 @@ const M = 9;
 const N = 4;
 let matrix = [];
 let carCurrentJ = 2;
-let algorithm;
-let interval = 200;
+let interval = 150;
 let carCount = 0;
 let keydownCount = 0;
 let highScore = [0];
 let coordinates = M - 1;
 let box = [];
 let lines;
+let algorithm;
+let combination;
 
 function main() {
 
@@ -22,26 +23,23 @@ function main() {
     document.addEventListener("keydown", (e) => {
 
         if (e.code === 'Space' && keydownCount === 0) {
-            setCar();
             keydownCount++;
             document.getElementById("gameOver").innerHTML = "";
-            startAlgorithm();
-            // startAlgorithm();
-            // startAlgorithm();
-            // startAlgorithm();
+            algorithm = algorithmCount(3);
             lines = setInterval(() => {
                 moveLines();
+                if (isFinished()){
+                    algorithm.forEach((interval) => {
+                        clearInterval(interval);
+                    });
+                    clearInterval(combination);
+                    clearInterval(lines);
+                    stopGame();
 
+                }
             }, interval);
-
-
-
         }
-
     });
-    if (isFinished()){
-
-    }
 
     document.addEventListener("keydown", function (press) {
         if (keydownCount > 0) {
@@ -85,23 +83,16 @@ function createMatrix() {
 
 function startAlgorithm() {
     let carBox = ["block", "lamborghini", "bmw"];
-    let combination = Math.floor(Math.random() * carBox.length + 1);
+    let combination = Math.floor(Math.random() * carBox.length);
     let wallI = 0;
     let randomJ = Math.floor(Math.random() * N);
 
-    algorithm = setInterval(() => {
+       return setInterval(() => {
         let currentBox = play(wallI, randomJ, combination, carBox);
         wallI = currentBox.wallI;
         randomJ = currentBox.randomJ;
         combination = currentBox.combination;
-        if (isFinished()) {
-            stopGame();
-        }
-    }, interval);
-
-
-
-
+        }, interval);
 }
 
 function play(wallI, randomJ, combination, carBox) {
@@ -136,13 +127,7 @@ function play(wallI, randomJ, combination, carBox) {
     }
 
     if (isFinished()) {
-        // clearInterval(lines);
-
         wallI = 0;
-        // clearInterval(algorithm);
-       // document.getElementById(cell).classList.remove(carBox[combination]);
-
-
     }
 
     return {
@@ -206,9 +191,7 @@ function setCar() {
 }
 
 function stopGame() {
-    //clearInterval(lines);
-    clearInterval(lines);
-    clearInterval(algorithm);
+
     let carLastPictureId = "cell_" + coordinates + "_" + carCurrentJ;
     if (carCount > highScore[0]) {
         highScore[0] = carCount;
@@ -222,8 +205,6 @@ function stopGame() {
     carCurrentJ = 2;
     init();
     setCar();
-
-
 }
 
 function init() {
@@ -270,14 +251,22 @@ function moveLines() {
         if (obj.color === "grey") {
             let road = "road_" + obj.i;
             document.getElementById(road).classList.remove("grey");
-            return obj.color = "white"
+             obj.color = "white"
         } else {
             let road = "road_" + obj.i;
             document.getElementById(road).classList.add("grey");
             obj.color = "grey";
         }
     },)
-
 }
 
+function algorithmCount(n) {
+    let arr = [];
+if (n < N) {
+    for (let i = 0; i < n; i++) {
+        arr.push(startAlgorithm());
+      }
+        return arr;
+  }
+}
 
