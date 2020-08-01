@@ -12,7 +12,9 @@ let coordinates = M - 1;
 let box = [];
 let lines;
 let algorithm;
-let combination;
+//let combination;
+let algorithm1 = [];
+
 
 function main() {
 
@@ -21,24 +23,38 @@ function main() {
     setLines();
 
     document.addEventListener("keydown", (e) => {
-
+          //init();
         if (e.code === 'Space' && keydownCount === 0) {
             keydownCount++;
             document.getElementById("gameOver").innerHTML = "";
-            algorithm = algorithmCount(3);
-            lines = setInterval(() => {
-                moveLines();
-                if (isFinished()){
-                    algorithm.forEach((interval) => {
-                        clearInterval(interval);
-                    });
-                    clearInterval(combination);
-                    clearInterval(lines);
-                    stopGame();
+           let timeoutID = setTimeout(() =>
+               algorithm1 = algorithmCount(2)
+           ,2000);
 
-                }
-            }, interval);
-        }
+            algorithm = algorithmCount(3);
+
+                lines = setInterval(() => {
+                    moveLines();
+                    if (isFinished()) {
+
+                        clearInterval(lines);
+                        if (algorithm1.length > 0) {
+                            algorithm1.forEach((interval) => {
+                                clearTimeout(timeoutID);
+                                clearInterval(interval);
+                            });
+                        }
+                        algorithm.forEach((interval) => {
+                            clearTimeout(timeoutID);
+                            clearInterval(interval);
+                        });
+
+                        stopGame();
+
+                    }
+
+                }, interval);
+            }
     });
 
     document.addEventListener("keydown", function (press) {
@@ -62,13 +78,11 @@ function createMatrix() {
         table.appendChild(row);
 
         for (let j = 0; j < N + 1; j++) {
-
-            // if (j === 2) {
             let road = document.createElement('td');
             road.id = "road_" + i + j;
             road.className = "road";
             row.appendChild(road);
-            // }
+
             if (j < N) {
                 matrix[i][j] = 0;
                 let cell = document.createElement('td');
@@ -76,7 +90,6 @@ function createMatrix() {
                 cell.className = 'cell';
                 row.appendChild(cell);
             }
-
         }
     }
 }
@@ -87,17 +100,15 @@ function startAlgorithm() {
     let wallI = 0;
     let randomJ = Math.floor(Math.random() * N);
 
-       return setInterval(() => {
+    return setInterval(() => {
         let currentBox = play(wallI, randomJ, combination, carBox);
         wallI = currentBox.wallI;
         randomJ = currentBox.randomJ;
         combination = currentBox.combination;
-        }, interval);
+    }, interval);
 }
 
 function play(wallI, randomJ, combination, carBox) {
-
-
     let back = wallI - 1;
     let cell = 'cell_' + wallI + '_' + randomJ;
     let cellBack = 'cell_' + back + '_' + randomJ;
@@ -135,7 +146,6 @@ function play(wallI, randomJ, combination, carBox) {
         randomJ: randomJ,
         combination: combination
     };
-
 }
 
 function moveCarLeft() {
@@ -214,8 +224,9 @@ function init() {
         for (let j = 0; j < N; j++) {
 
             let cell = "cell_" + i + "_" + j;
-            document.getElementById(cell).classList.add("cell");
-
+            document.getElementById(cell).classList.remove("block");
+            document.getElementById(cell).classList.remove( "lamborghini");
+            document.getElementById(cell).classList.remove("bmw");
         }
     }
 
@@ -242,7 +253,6 @@ function setLines() {
 
         }
     }
-
 }
 
 
@@ -251,7 +261,7 @@ function moveLines() {
         if (obj.color === "grey") {
             let road = "road_" + obj.i;
             document.getElementById(road).classList.remove("grey");
-             obj.color = "white"
+            obj.color = "white"
         } else {
             let road = "road_" + obj.i;
             document.getElementById(road).classList.add("grey");
@@ -262,11 +272,12 @@ function moveLines() {
 
 function algorithmCount(n) {
     let arr = [];
-if (n < N) {
-    for (let i = 0; i < n; i++) {
-        arr.push(startAlgorithm());
-      }
+    if (n < N) {
+        for (let i = 0; i < n; i++) {
+            arr.push(startAlgorithm());
+
+        }
         return arr;
-  }
+    }
 }
 
