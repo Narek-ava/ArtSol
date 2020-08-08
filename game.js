@@ -18,6 +18,8 @@ let algorithm1 = [];
 let carBox = ["block", "lamborghini", "bmw"];
 let set = 5;
 let init = false;
+let carLeft = 65;
+let leftRightPressCode;
 
 
 function main() {
@@ -31,6 +33,7 @@ function main() {
 
     document.addEventListener("keydown", (e) => {
         //init();
+
         if (e.code === 'Space' && keydownCount === 0) {
             moveCanvas(set);
             keydownCount++;
@@ -55,14 +58,12 @@ function main() {
     //
     document.addEventListener("keydown", function (press) {
         if (keydownCount > 0) {
-            if (press.code === "ArrowLeft" && isOnMatrixLeft(carCurrentJ)) {
-                    moveCarLeft();
-                    carCurrentJ--;
-
+            leftRightPressCode = press.code;
+            if (press.code === "ArrowLeft" ) {
+                    moveCar();
             }
-            if (press.code === "ArrowRight" && isOnMatrixRight(carCurrentJ)) {
-                moveCarRight();
-                carCurrentJ++;
+            if (press.code === "ArrowRight" ) {
+                moveCar();
             }
         }
     })
@@ -140,16 +141,20 @@ function startAlgorithm() {
 }
 
 //
-function moveCarLeft() {
-    let leftMove = carCurrentJ - 1;
-    let left = 'line_' + leftMove;
-    let rightDel = document.getElementById(carCurrenId) ;
+function moveCar() {
 
-    let leftCar = document.getElementById(left);
-    let leftCarDiv = document.createElement("div");
-    leftCarDiv.className = "car";
-    leftCar.appendChild(leftCarDiv);
-    rightDel.removeChild(rightDel.childNodes[0]);
+   let playerCar = document.getElementById("car");
+   if (leftRightPressCode === "ArrowRight" && carLeft < 143){
+       playerCar.style.left = carLeft + 20 +"px";
+       carLeft += 20;
+       console.log(carLeft);
+   }
+
+   if (leftRightPressCode === "ArrowLeft"  && carLeft > 0){
+       playerCar.style.left = carLeft - 20 + "px";
+       carLeft -= 20;
+
+   }
 
 }
 //
@@ -194,7 +199,7 @@ function isOnMatrixRight(carCurrentJ) {
 function setCar() {
     let div = document.getElementById("player_car");
     let playerCar = document.createElement("div");
-    playerCar.className = "car";
+    playerCar.id = "car";
     div.appendChild(playerCar);
 
 }

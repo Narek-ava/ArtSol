@@ -9,7 +9,7 @@
 /*    width: 6px;*/
 /*}*/
 
-.car {
+#car {
     position: absolute;
     background-image: url('https://www.seekpng.com/png/full/898-8989755_image-transparent-top-view-car-png.png');
     background-size: 100% 100%;
