@@ -1,0 +1,204 @@
+/*table {*/
+/*    border-collapse: collapse;*/
+/*}*/
+
+/*.cell {*/
+/*    padding: 26px;*/
+/*    background: #313333;*/
+/*    height: 40px ;*/
+/*    width: 6px;*/
+/*}*/
+
+.car {
+    position: absolute;
+    background-image: url('https://www.seekpng.com/png/full/898-8989755_image-transparent-top-view-car-png.png');
+    background-size: 100% 100%;
+    width: 70px;
+    height: 129px;
+    top: 21px;
+    left: 65px;
+}
+
+.block {
+    position: absolute;
+    background-image: url("https://www.pngkit.com/png/full/54-544580_free-png-top-view-trees-cars-landscape-furniture.png");
+    background-size: 100% 100%;
+    width: 70px;
+    height: 129px;
+    top: 0;
+}
+
+/*!*.royce{*!*/
+/*!*    background-image: url("");*!*/
+/*!*    background-size: 100% 100%;*!*/
+/*!*}*!*/
+
+.lamborghini {
+    position: absolute;
+    background-image: url("https://www.seekpng.com/png/full/54-546605_lambo-transparent-top-view-lamborghini-murcielago-lp-670.png");
+    background-size: 100% 100%;
+    width: 70px;
+    height: 129px;
+    top: 0;
+
+}
+
+/*!*.mercedes {*!*/
+/*!*      background-image: url("");*!*/
+/*!*      background-size: 100% 100%;*!*/
+/*!*  }*!*/
+
+.bmw {
+    position: absolute;
+    background-image: url("https://www.pngkit.com/png/full/54-544580_free-png-top-view-trees-cars-landscape-furniture.png");
+    background-size: 100% 100%;
+    width: 70px;
+    height: 129px;
+    top: 0;
+}
+
+/*!*.volkswagen {*!*/
+/*!*        background-image: url("");*!*/
+/*!*        background-size: 100% 100%;*!*/
+/*!*    }*!*/
+
+/*!*.audi {*!*/
+/*!*         background-image: url("");*!*/
+/*!*         background-size: 100% 100%;*!*/
+/*!*     }*!*/
+
+/*!*.ferrari {*!*/
+/*!*          background-image: url("");*!*/
+/*!*          background-size: 100% 100%;*!*/
+/*!*      }*!*/
+
+/*.road{*/
+/*    background-color: yellow;*/
+/*    height: 28px ;*/
+/*    width: 6px;*/
+/*}*/
+
+/*.grey{*/
+/*    background-color:  #313333;*/
+/*}*/
+
+/*.white{*/
+/*    background-color: yellow;*/
+/*}*/
+
+/*#scoreDiv{*/
+/*    position: relative;*/
+/*    height:0;*/
+/*    background-color: #000;*/
+/*    opacity: 0.65;*/
+/*    font-family: Verdana, Geneva, sans-serif;*/
+/*    color: #FFF;*/
+/*    bottom: 0;*/
+/*    z-index: 1;*/
+/*    text-align: justify;*/
+/*}*/
+
+#road2 {
+    position: absolute;
+    width: 512px;
+    height: 850px;
+    top: 100px;
+
+}
+
+/*#road3{*/
+/*    color: #FFF;*/
+/*    z-index: 80;*/
+/*    position: absolute;*/
+/*}*/
+
+/*#gameOver{*/
+/*    color: #FFF;*/
+/*    font-size: 320px;*/
+/*    position: absolute;*/
+/*    text-align: center;*/
+/*    text-align: -webkit-center;*/
+/*}*/
+
+#canvas {
+    top: 50%;
+    left: 165%;
+    position: absolute;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+}
+
+/*#scoreBoard{*/
+/*    width: 512px;*/
+/*    height: 850px;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(50%,50%);*/
+/*}*/
+
+/*#scoreBoard.inner-board{*/
+/*    width: inherit;*/
+/*    height: inherit;*/
+/*    position: relative;*/
+/*}*/
+
+/*#scoreBoard .inner-board .fuel-meter{*/
+/*    position: absolute;*/
+/*    left: -470px;*/
+/*    top: -800px;*/
+
+/*}*/
+
+/*.meter-box{*/
+/*    color: #FFFFFF;*/
+/*    background-color: rgba(0,0,0,0.5);*/
+/*    padding: 5px 10px;*/
+/*}*/
+
+/*.carSize{*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*}*/
+#line_1 {
+    position: absolute;
+    height: 840px;
+    width: 64px;
+    top: 3px;
+    left: 735px;
+    z-index: 1;
+}
+
+#line_2 {
+    position: absolute;
+    height: 840px;
+    width: 64px;
+    top: 3px;
+    left: 811px;
+    z-index: 1;
+}
+
+#line_3 {
+    position: absolute;
+    height: 840px;
+    width: 64px;
+    top: 3px;
+    left: 887px;
+    z-index: 1;
+}
+#player_car{
+    position: absolute;
+    height: 157px;
+    width: 214px;
+    top: 689px;
+    left: 738px;
+    z-index: 1;
+}
+
+/*#carDiv{*/
+
+/*    width: 70px;*/
+/*    height:129px;*/
+/*    top: 100px;*/
+/*    left: 0px;*/
+/*}*/
