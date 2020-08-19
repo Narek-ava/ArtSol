@@ -1,17 +1,17 @@
 window.onload = main;
 
-const M = 9;
-const N = 4;
 let interval = 15;
 let keydownCount = 0;
 let algorithm;
-let algorithm1 = [];
+let algorithmInterval = [];
 let carBox = ["block", "lamborghini", "bmw"];
-let set = 5;
+let set = 10;
 let init = false;
 let carLeft = 65;
 let leftRightPressCode;
 let endOfGame = false;
+// let highScore = 0;
+// let score = 0;
 
 function main() {
     moveCanvas(0);
@@ -23,7 +23,7 @@ function main() {
             moveCanvas(set);
             keydownCount++;
 
-            algorithm1 = setInterval(() => {
+            algorithmInterval = setInterval(() => {
                 if (init === false) {
                     init = true;
                     startAlgorithm();
@@ -78,6 +78,8 @@ function startAlgorithm() {
             blockCar.style.top = "0px";
             div.removeChild(div.childNodes[0]);
             init = false;
+           // score++;
+          //  document.getElementById("score").value = "Score" + " " + score;
             clearInterval(algorithm);
             if (isFinished(lineId)) {
                 stopGame();
@@ -116,7 +118,7 @@ function setCar() {
 
 function stopGame() {
     moveCanvas(0);
-    clearInterval(algorithm1);
+    clearInterval(algorithmInterval);
     keydownCount = 0;
     endOfGame = true;
 }

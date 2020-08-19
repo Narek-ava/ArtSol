@@ -1,13 +1,3 @@
-/*table {*/
-/*    border-collapse: collapse;*/
-/*}*/
-
-/*.cell {*/
-/*    padding: 26px;*/
-/*    background: #313333;*/
-/*    height: 40px ;*/
-/*    width: 6px;*/
-/*}*/
 
 #car {
     position: absolute;
@@ -28,11 +18,6 @@
     top: 0;
 }
 
-/*!*.royce{*!*/
-/*!*    background-image: url("");*!*/
-/*!*    background-size: 100% 100%;*!*/
-/*!*}*!*/
-
 .lamborghini {
     position: absolute;
     background-image: url("https://www.seekpng.com/png/full/54-546605_lambo-transparent-top-view-lamborghini-murcielago-lp-670.png");
@@ -43,11 +28,6 @@
 
 }
 
-/*!*.mercedes {*!*/
-/*!*      background-image: url("");*!*/
-/*!*      background-size: 100% 100%;*!*/
-/*!*  }*!*/
-
 .bmw {
     position: absolute;
     background-image: url("https://www.pngkit.com/png/full/54-544580_free-png-top-view-trees-cars-landscape-furniture.png");
@@ -57,47 +37,6 @@
     top: 0;
 }
 
-/*!*.volkswagen {*!*/
-/*!*        background-image: url("");*!*/
-/*!*        background-size: 100% 100%;*!*/
-/*!*    }*!*/
-
-/*!*.audi {*!*/
-/*!*         background-image: url("");*!*/
-/*!*         background-size: 100% 100%;*!*/
-/*!*     }*!*/
-
-/*!*.ferrari {*!*/
-/*!*          background-image: url("");*!*/
-/*!*          background-size: 100% 100%;*!*/
-/*!*      }*!*/
-
-/*.road{*/
-/*    background-color: yellow;*/
-/*    height: 28px ;*/
-/*    width: 6px;*/
-/*}*/
-
-/*.grey{*/
-/*    background-color:  #313333;*/
-/*}*/
-
-/*.white{*/
-/*    background-color: yellow;*/
-/*}*/
-
-/*#scoreDiv{*/
-/*    position: relative;*/
-/*    height:0;*/
-/*    background-color: #000;*/
-/*    opacity: 0.65;*/
-/*    font-family: Verdana, Geneva, sans-serif;*/
-/*    color: #FFF;*/
-/*    bottom: 0;*/
-/*    z-index: 1;*/
-/*    text-align: justify;*/
-/*}*/
-
 #road2 {
     position: absolute;
     width: 512px;
@@ -105,20 +44,6 @@
     top: 100px;
 
 }
-
-/*#road3{*/
-/*    color: #FFF;*/
-/*    z-index: 80;*/
-/*    position: absolute;*/
-/*}*/
-
-/*#gameOver{*/
-/*    color: #FFF;*/
-/*    font-size: 320px;*/
-/*    position: absolute;*/
-/*    text-align: center;*/
-/*    text-align: -webkit-center;*/
-/*}*/
 
 #canvas {
     top: 50%;
@@ -145,9 +70,14 @@
 
 /*#scoreBoard .inner-board .fuel-meter{*/
 /*    position: absolute;*/
-/*    left: -470px;*/
-/*    top: -800px;*/
+/*    top: -836px;*/
+/*    left: 78px;*/
+/*    width: 488px;*/
+/*    height: 74px;*/
 
+/*}*/
+/*.label{*/
+/*    font-size: 26px;*/
 /*}*/
 
 /*.meter-box{*/
@@ -156,10 +86,6 @@
 /*    padding: 5px 10px;*/
 /*}*/
 
-/*.carSize{*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*}*/
 #line_1 {
     position: absolute;
     height: 840px;
@@ -186,6 +112,7 @@
     left: 887px;
     z-index: 1;
 }
+
 #player_car{
     position: absolute;
     height: 157px;
@@ -194,11 +121,3 @@
     left: 738px;
     z-index: 1;
 }
-
-/*#carDiv{*/
-
-/*    width: 70px;*/
-/*    height:129px;*/
-/*    top: 100px;*/
-/*    left: 0px;*/
-/*}*/
