@@ -1,0 +1,14 @@
+table {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+}
+
+.horse {
+    background-image: url("https://cdn4.iconfinder.com/data/icons/marketing-and-digital-marketing/32/business_marketing_advertising_strategy-512.png");
+    background-size: 100% 100%;
+}
