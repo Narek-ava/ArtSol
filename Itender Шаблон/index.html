@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Itender</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon_1.ico"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Main style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen"/>
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/>
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/>
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<!--    <link rel="stylesheet" href="../Готовые Проекты/StomMedia/seo/css/main.scss">-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<header id="header">
+    <!-- header top search -->
+    <div class="header-top">
+        <div class="container">
+            <form action="">
+                <div id="search">
+                    <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s"
+                           id="m_search" style="display: inline-block;">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- header bottom -->
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+
+                <div class="col-md-9 col-sm-6 col-xs-6">
+                    <div class="header-contact">
+                        <ul>
+                            <li>
+                                <div class="phone">
+                                    <i class="fa fa-phone"></i>
+                                    <a href="tel:+37410244974">+374 10 24 49 74</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="mail">
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="mailto:info@itender.am"> info@itender.am</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 lang-bloc">
+                    <div class="lang">
+                        <ul class="nav navbar-nav navbar-right lang-bar">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle active-lang" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    ARM <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu other-langs">
+                                    <li class="plain-link">
+                                        <a href="#">
+                                            <img src="assets/images/flags/en.png">ENG</a>
+                                    </li>
+                                    <li class="plain-link">
+                                        <a href="#">
+                                            <img src="assets/images/flags/ru.png">RUS</a>
+                                    </li>
+                                    <li class="plain-link">
+                                        <a href="#">
+                                            <img src="assets/images/flags/arm.png">ARM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-login">
+                        <a class="login modal-form" href="auth-login.html">Login /
+                            Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--<div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal in">-->
+<!--    <div class="modal-dialog">-->
+<!--        <div id="login-content" class="modal-content itenter-pop">-->
+<!--            <div class="modal-header">-->
+<!--                <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span-->
+<!--                        aria-hidden="true">×</span></button>-->
+<!--                <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <form>-->
+<!--                    <div class="form-group">-->
+<!--                         <span class="auth-form-icon">-->
+<!--                              <i class="fa fa-user" aria-hidden="true"></i>-->
+<!--                         </span>-->
+<!--                        <input type="text" placeholder="User name" class="form-control">-->
+
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                             <span class="auth-form-icon">-->
+<!--                                  <i class="fa fa-lock" aria-hidden="true"></i>-->
+<!--                              </span>-->
+<!--                             <input type="password" placeholder="Password" class="form-control">-->
+<!--                    </div>-->
+
+<!--                    <div class="loginbox">-->
+<!--                        <label class="chec-pop"><input type="checkbox"><span>Remember me</span></label>-->
+
+<!--                        <div class="col-sm-6 modal-footer footer-box">-->
+<!--                            <a id="forgot-btn" href="#" class="text-muted font-13">-->
+<!--                                <i class="fa fa-lock"></i>Forgot password?</a>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                    <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="button">-->
+<!--                        SIGN IN<i class="fa fa-sign-in" aria-hidden="true"></i></button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--            <div class="modal-footer footer-box">-->
+<!--                <span>Don't have an account ?<a id="signup-btn" href="#">Sign Up</a></span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div id="signup-content" class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span-->
+<!--                        aria-hidden="true">×</span></button>-->
+<!--                <h4 class="modal-title">Գրանցում</h4>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <div class="briefcase-bloc">-->
+<!--                    <i class="fa fa-briefcase" aria-hidden="true"></i>-->
+<!--                    <a href="private-registr.html">Մասնավոր</a>-->
+<!--                </div>-->
+<!--                <div class="briefcase-bloc">-->
+<!--                    <i class="fa fa-building" aria-hidden="true"></i>-->
+<!--                <a href="state-registr.html">Պետական պատվիրատու</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div id="forgot-content" class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span-->
+<!--                        aria-hidden="true">×</span></button>-->
+<!--                <h4 class="modal-title">ԳԱՂՏՆԱԲԱՌԻ ՎԵՐԱԿԱՆԳՆՈՒՄ</h4>-->
+<!--                <p>Մուտքագրեք Ձեր էլ․ փոստի հասցեն</p>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <form>-->
+<!--                    <div class="form-group">-->
+<!--                         <span class="auth-form-icon">-->
+<!--                              <i class="fa fa-envelope-o"></i>-->
+<!--                         </span>-->
+<!--                        <input type="text" placeholder="Enter Email" class="form-control-forgot">-->
+<!--                    </div>-->
+<!--                    <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="button">-->
+<!--                        Reset <i class="fa fa-sign-in" aria-hidden="true"></i></button>-->
+
+<!--                    <div class="loginbox">-->
+<!--                        <label><span>Remember It ?</span><i class="fa"></i></label>-->
+<!--                        <button class="btn signin-btn" type="button">SIGN IN</button>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<section id="menu-area">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo_1.png" alt="Itender"/></a>
+                <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                    <li class="active"><a href="index.html">Գլխավոր</a></li>
+                    <li><a href="tenderner.html">Տենդերներ</a></li>
+                    <li><a href="information.html">Տեղեկատվություն</a></li>
+                    <li><a href="help.html">Օգնություն</a></li>
+                    <li><a href="contact.html">Կապ</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</section>
+
+
+<section id="slider">
+    <div class="main-slider box-slider">
+        <div class="single-slide">
+            <img src="assets/images/slider-1.png" alt="img">
+            <div class="slide-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6">
+                            <div class="slide-article">
+                                <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">ԹԻՐԱԽԱՅԻՆ
+                                    ԳՈՐԾԸՆԿԵՐՆԵՐԻ ԲԱՑԱՀԱՅՏՈՒՄ</h1>
+                                <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s"></p>
+                                <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"
+                                   href="#">ԿԱՐԴԱ ԱՎԵԼԻՆ</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slide">
+            <img src="assets/images/slider-2.png" alt="img">
+            <div class="slide-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6">
+                            <div class="slide-article">
+                                <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">ՇԱՀԱՎԵՏ ԱՌԱՋԱՐԿ
+                                    ԳՏՆԵԼՈՒ
+                                    ԼԱՎԱԳՈՒՅՆ ՏԱՐԲԵՐԱԿ</h1>
+                                <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s"></p>
+                                <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"
+                                   href="#">ԿԱՐԴԱ
+                                    ԱՎԵԼԻՆ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slide">
+            <img src="assets/images/slider-4.png" alt="img">
+            <div class="slide-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6">
+                            <div class="slide-article">
+                                <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">ԾԱԽՍԵՐԻ
+                                    ՕՊՏԻՄԱԼԱՑՄԱՆ ՆՈՐ
+                                    ՄՈՏԵՑՈՒՄ</h1>
+                                <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s"></p>
+                                <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"
+                                   href="#">ԿԱՐԴԱ
+                                    ԱՎԵԼԻՆ</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slide">
+            <img src="assets/images/slider-5.jpg" alt="img">
+            <div class="slide-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="slide-article">
+                                <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">ՄՐՑՈՒՅԹՆԵՐԻ
+                                    ԿԱԶՄԱԿԵՐՊՄԱՆ
+                                    ԱՎՏՈՄԱՏԱՑՈՒՄ</h1>
+                                <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s"></p>
+                                <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"
+                                   href="#">ԿԱՐԴԱ
+                                    ԱՎԵԼԻՆ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slide">
+            <img src="assets/images/slider-3.jpg" alt="img">
+            <div class="slide-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6">
+                            <div class="slide-article">
+                                <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">ՎԱՃԱՌՔԻ
+                                    ԱՎԵԼԱՑՄԱՆ ՆՈՐ ԳՈՐԾԻՔ</h1>
+                                <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s"></p>
+                                <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"
+                                   href="#">ԿԱՐԴԱ ԱՎԵԼԻՆ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="feature">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-area">
+                    <h2 class="title">Համակարգի մասին</h2>
+                    <span class="line"></span>
+                    <p>Բարի գալուստ iTender համակարգ </p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="feature-content">
+                    <div class="row">
+                        <h3 class="title">Տենդերներով հետաքրքրվողներին տալիս է հետևյալ հնարավորությունները</h3>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-feature wow zoomIn">
+                                <i class="fa fa-shopping-basket feature-icon" aria-hidden="true"></i>
+                                <h4 class="feat-title">Գնել և վաճառել տենդերների միջոցով </h4>
+
+                                <p class="feature">Համակարգը հնարավորություն է տալիս որպես գնորդ կազմակերպել տենդերներ,
+                                    որպեսզի ձեռք բերվի շուկայականից ցածր գներով ապրանքներ, աշխատանքներ և
+                                    ծառայություններ՝ ունենալով թե ժամանակային
+                                    և թե ֆինանսական խնայողություններ։ Որպես վաճառող համակարգում
+                                    ներկայացնել առաջարկներ համակարգի միջոցով կազմակերպված տենդերներին, հաղթել և մեծացնել
+                                    վաճառքի ծավալները։
+                                </p>
+                                <p>
+                                    <a class="open_review" href="opportunity_tender.html#scroll_to_01" data-id="3">Ավելին
+                                        <i class="fa fa-long-arrow-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-feature wow zoomIn">
+                                <i class="fa fa-info feature-icon"></i>
+                                <h4 class="feat-title">Ստանալ տենդերների մասին անհրաժեշտ տեղեկատվություն </h4>
+                                <p class="feature">Համակարգը տալիս է հնարավորություն տեղեկանալ ավարտված տենդերների
+                                    մասին, ինչը հնարավորություն
+                                    է տալիս ծանոթանալ մրցակից ընկերությունների, իրենց կողմից ներկայացված գների և
+                                    հաղթողների մասին, որոնց հիման վրա մշակել ճիշտ գնային քաղաքականություն՝ տենդերներում
+                                    հաղթելու համար։
+                                </p>
+                                <p>
+                                    <a class="open_review" href="opportunity_tender.html#scroll_to_01" data-id="3">Ավելին
+                                        <i class="fa fa-long-arrow-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-feature wow zoomIn">
+                                <i class="fa fa-question feature-icon"></i>
+                                <h4 class="feat-title">Օգտվել տենդերների մասնակցության և կառավարման ավտոմատացված
+                                    գործիքներից </h4>
+                                <p class="feature">Ծրագրի միջոցով արագ, ավտոմատ եղանակով պատրաստել պետական գնումների
+                                    մասնակցության հայտերը և ուղեցույցերի,
+                                    տեսանյութերի օգնությամբ ապահովել տենդերների մասնակցությունը.
+                                </p>
+                                <p>
+                                    <a class="open_review" href="opportunity_tender.html#scroll_to_01" data-id="3">Ավելին
+                                        <i class="fa fa-long-arrow-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <h3 class="title">Պետական պատվիրատուներին տալիս է հետևյալ հնարավորությունները</h3>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-feature wow zoomIn">
+                                <i class="fa fa-file-o feature-icon"></i>
+                                <h4 class="feat-title">Կազմել գնումների պլաններ և կառավարել </h4>
+                                <p class="feature">Համակարգը հնարավորություն է տալիս կազմել գնումների մասին ՀՀ
+                                    օրենսդրությանը համապատասխան գնումների պլաններ,
+                                    որտեղ ընթացակարգերը որոշվում են ավտոմատ՝ զերծ պահելով օրենսդրական սխալներից։
+                                </p>
+                                <p>
+                                    <a class="open_review" href="opportunity_tender.html#scroll_to_1" data-id="3">Ավելին
+                                        <i class="fa fa-long-arrow-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-feature wow zoomIn">
+                                <i class="fa fa-sitemap feature-icon"></i>
+                                <h4 class="feat-title">Կազմակերպել և ավտոմատացնել գնման գործընթացները</h4>
+
+                                <p class="feature">
+                                    Համակարգը հնարավորություն է տալիս կազմակերպել «Գնումների մասին» ՀՀ օրենքի
+                                    23-րդ հոդվածի 1-ին մասի 1-ին, 3-րդ և 4-րդ կետերով սահմանված մեկ անձից գնում
+                                    կատարելու գնման ընթացակարգեր,
+                                    որի դեպքում համակարգը պատրաստում է գնման գործընթացի ամբողջ թղթաբանությունը,
+                                    արդյունքում ձևավորում կնքված պայմանագրերի պահեստ։
+                                </p>
+                                <p>
+                                    <a class="open_review" href="opportunity_tender.html#scroll_to_2" data-id="3">Ավելին
+                                        <i class="fa fa-long-arrow-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-feature wow zoomIn">
+                                <i class="fa fa-pencil-square-o feature-icon"></i>
+                                <h4 class="feat-title">Կառավարել կնքված պայմանագրերը </h4>
+                                <p class="feature">
+                                    Գնման գործընթացների արդյունքում ձևավորվում է կնքված պայմանագրերի պահեստ, որը
+                                    կառավարելի է պատվիրատուի և պայմանագրի կողմի համար։ Պատվիրատուն
+                                    համակարգի միջոցով կնքված յուրաքանչյուր պայմանագրի շրջանակներում կարող է պատվերներ
+                                    տալ, հետևել պահեստի շարժին, յուրաքանչյուր պատվերի
+                                </p>
+                                <p>
+                                    <a class="open_review" href="opportunity_tender.html#scroll_to_3" data-id="3">Ավելին
+                                        <i class="fa fa-long-arrow-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="latest-news01">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-area">
+                    <h2 class="title">ՎԵՐՋԻՆ ՆՈՐՈՒԹՅՈՒՆՆԵՐԸ</h2>
+                    <span class="line"></span>
+                    <p> Համակարգում առկա է պետական մրցույթներին մասնակցության հայտերի ավտոմատ պատրաստման գործիք</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="latest-news-content">
+                    <div class="row latest-news-content__sider_1">
+                        <div class="col-md-4">
+                            <article class="blog-news-single">
+                                <div class="blog-news-img">
+                                    <a href="blog-single-with-right-sidebar.html"><img
+                                            src="assets/images/blog-img-1.jpg" alt="image"></a>
+                                </div>
+                                <div class="blog-news-title">
+                                    <h2><a href="blog-single-with-right-sidebar.html">All about writing story</a></h2>
+                                    <p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span>
+                                    </p>
+                                </div>
+                                <div class="blog-news-details">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the</p>
+                                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">ԿԱՐԴԱ ԱՎԵԼԻՆ
+                                        <i class="fa fa-long-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="blog-news-single">
+                                <div class="blog-news-img">
+                                    <a href="blog-single-with-right-sidebar.html"><img
+                                            src="assets/images/blog-img-2.jpg" alt="image"></a>
+                                </div>
+                                <div class="blog-news-title">
+                                    <h2><a href="blog-single-with-right-sidebar.html">Best Mobile Device</a></h2>
+                                    <p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span>
+                                    </p>
+                                </div>
+                                <div class="blog-news-details">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the</p>
+                                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">ԿԱՐԴԱ ԱՎԵԼԻՆ
+                                        <i class="fa fa-long-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="blog-news-single">
+                                <div class="blog-news-img">
+                                    <a href="blog-single-with-right-sidebar.html"><img
+                                            src="assets/images/blog-img-3.jpg" alt="image"></a>
+                                </div>
+                                <div class="blog-news-title">
+                                    <h2><a href="blog-single-with-right-sidebar.html">Personal Note Details</a></h2>
+                                    <p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span>
+                                    </p>
+                                </div>
+                                <div class="blog-news-details">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the</p>
+                                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">ԿԱՐԴԱ ԱՎԵԼԻՆ
+                                        <i class="fa fa-long-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="blog-news-single">
+                                <div class="blog-news-img">
+                                    <a href="blog-single-with-right-sidebar.html"><img
+                                            src="assets/images/blog-img-1.jpg" alt="image"></a>
+                                </div>
+                                <div class="blog-news-title">
+                                    <h2><a href="blog-single-with-right-sidebar.html">All about writing story</a></h2>
+                                    <p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span>
+                                    </p>
+                                </div>
+                                <div class="blog-news-details">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the</p>
+                                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">ԿԱՐԴԱ ԱՎԵԼԻՆ
+                                        <i class="fa fa-long-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="blog-news-single">
+                                <div class="blog-news-img">
+                                    <a href="blog-single-with-right-sidebar.html"><img
+                                            src="assets/images/blog-img-2.jpg" alt="image"></a>
+                                </div>
+                                <div class="blog-news-title">
+                                    <h2><a href="blog-single-with-right-sidebar.html">Best Mobile Device</a></h2>
+                                    <p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span>
+                                    </p>
+                                </div>
+                                <div class="blog-news-details">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the</p>
+                                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">ԿԱՐԴԱ ԱՎԵԼԻՆ
+                                        <i class="fa fa-long-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="blog-news-single">
+                                <div class="blog-news-img">
+                                    <a href="blog-single-with-right-sidebar.html"><img
+                                            src="assets/images/blog-img-3.jpg" alt="image"></a>
+                                </div>
+                                <div class="blog-news-title">
+                                    <h2><a href="blog-single-with-right-sidebar.html">Personal Note Details</a></h2>
+                                    <p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span>
+                                    </p>
+                                </div>
+                                <div class="blog-news-details">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the</p>
+                                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">ԿԱՐԴԱ ԱՎԵԼԻՆ
+                                        <i class="fa fa-long-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row bloc-subscribe container">
+        <a class="blog-more-btn subscribe-2" href="#subscribe">Բաժանորդագրվել
+            <i class="fa fa-arrow-down"></i>
+        </a>
+
+    </div>
+</section>
+
+<section id="counter">
+
+    <div class="counter-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="counter-area">
+                        <div class="row">
+                            <!-- Start single counter -->
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="single-counter">
+                                    <div class="counter-icon">
+                                        <i class="fa fa-suitcase"></i>
+                                    </div>
+                                    <div class="counter-no counter">
+                                        1275
+                                    </div>
+                                    <div class="counter-label">
+                                        Ակտիվ տենդերներ
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="single-counter">
+                                    <div class="counter-icon">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <div class="counter-no counter">
+                                        5275
+                                    </div>
+                                    <div class="counter-label">
+                                        Տենդերներ այսօր
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="single-counter">
+                                    <div class="counter-icon">
+                                        <i class="fa fa-trophy"></i>
+                                    </div>
+                                    <div class="counter-no counter">
+                                        350
+                                    </div>
+                                    <div class="counter-label">
+                                        Բոլոր տենդերներ
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="single-counter">
+                                    <div class="counter-icon">
+                                        <i class="fa fa-users"></i>
+                                    </div>
+                                    <div class="counter-no counter">
+                                        875
+                                    </div>
+                                    <div class="counter-label">
+                                        Մասնավոր ընկերություններ
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="single-counter">
+                                    <div class="counter-icon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    <div class="counter-no counter">
+                                        150
+                                    </div>
+                                    <div class="counter-label">
+                                        Պետական պատվիրատուներ
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section id="service">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                <div class="service-content">-->
+<!--                    <div class="row aravelutyunner">-->
+
+<!--                        <div class="col-md-4 col-sm-6">-->
+<!--                            <div class="arav1">-->
+<!--                                <div class="arav_img">-->
+<!--                                    <img src="https://www.itender.am/icon_1.png" alt="">-->
+<!--                                </div>-->
+<!--                                <h2>Ինչ հնարավորություններ է ընձեռում</h2>-->
+<!--                                <div class="arav_list">-->
+<!--                                    <ul>-->
+<!--                                        <li><i class="fa fa-check" aria-hidden="true"></i>գնորդները կարող են ինքնուրույն-->
+<!--                                            կազմակերպել մրցույթներ /տենդերներ/-->
+<!--                                        </li>-->
+<!--                                        <li><i class="fa fa-check"></i> ձեռք բերել շուկայականից ցածր գներով ապրանքներ,-->
+<!--                                            աշխատանքներ և ծառայություններ-->
+<!--                                        </li>-->
+<!--                                        <li><i class="fa fa-check"></i> ունենալ խնայողություններ կամ ձեռք բերել-->
+<!--                                            շուկայում առկա առաջարկներից լավագույնը-->
+<!--                                        </li>-->
+<!--                                        <li><i class="fa fa-check"></i> վաճառողները կարող են ներկայացնել իրենց-->
+<!--                                            առաջարկները թիրախավորված գնորդներին-->
+<!--                                        </li>-->
+<!--                                        <li><i class="fa fa-check"></i> մեծացնել վաճառքի ծավալները:</li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4 col-sm-6">-->
+<!--                            <div class="arav1">-->
+<!--                                <div class="arav_img">-->
+<!--                                    <img src="https://www.itender.am/icon_2.png" alt="">-->
+<!--                                </div>-->
+<!--                                <h2>Ինչ առավելություններ ունի </h2>-->
+<!--                                <div class="arav_list">-->
+<!--                                    <ul>-->
+<!--                                        <li><i class="fa fa-check"></i>ապահովում է մրցակցություն</li>-->
+<!--                                        <li><i class="fa fa-check"></i>ունի թափանցիկության բարձր աստիճան</li>-->
+<!--                                        <li><i class="fa fa-check"></i>գնորդները կարող են ինքնուրույն կազմակերպել-->
+<!--                                            մրցույթներ-->
+<!--                                        </li>-->
+<!--                                        <li><i class="fa fa-check"></i>ապահովում է անվտանգության բարձր աստիճան</li>-->
+<!--                                        <li><i class="fa fa-check"></i>մատչելի է կառավարման համար</li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+
+<!--                        </div>-->
+<!--                        <div class="col-md-4 col-sm-6">-->
+<!--                            <div class="arav1">-->
+<!--                                <div class="arav_img">-->
+<!--                                    <img src="https://www.itender.am/icon_3.png" alt="">-->
+<!--                                </div>-->
+<!--                                <h2>Ինչ խնդիրներ է լուծում</h2>-->
+<!--                                <div class="arav_list">-->
+<!--                                    <ul>-->
+<!--                                        <li><i class="fa fa-check"></i>ծախսերի օպտիմալացում</li>-->
+<!--                                        <li><i class="fa fa-check"></i>կոռուպցիոն ռիսկերի կրճատում</li>-->
+<!--                                        <li><i class="fa fa-check"></i>շահավետ առաջարկ փնտրելու ժամանակի կրճատում</li>-->
+<!--                                        <li><i class="fa fa-check"></i>նոր գնորդների բացահայտում</li>-->
+<!--                                        <li><i class="fa fa-check"></i>մրցակիցների և նրանց գնային քաղաքականության-->
+<!--                                            բացահայտում-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section id="latest-news02">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-area">
+                    <h2 class="title">Օգտակար տեսանյութեր</h2>
+                    <span class="line"></span>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="latest-news-content">
+                    <div class="row latest-video-content__sider">
+                        <div class="col-md-4">
+                            <article class="blog-news-single">
+                                <iframe width="360" height="315" src="https://www.youtube.com/embed/JCzX-KckpfU"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="blog-news-single">
+
+                                <iframe width="360" height="315" src="https://www.youtube.com/embed/EO-zBCmk6hg"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="blog-news-single">
+                                <iframe width="360" height="315" src="https://www.youtube.com/embed/iyvxJZouJF8"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="pricing-table">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-area">
+                    <h2 class="title">ՀԱՄԱԿԱՐԳՈՒՄ ԳՈՐԾՈՂ ՓԱԹԵԹՆԵՐԸ</h2>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h3 class="title">ՊԵՏԱԿԱՆ ՊԱՏՎԻՐԱՏՈՒՆԵՐԻՆ</h3>
+                <div class="feature-content">
+                    <div class="row">
+                        <h3 class="title">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐԻ ՓԱԹԵԹՆԵՐ</h3>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-feature wow zoomIn">
+                                <i class="fa fa-pencil-square-o feature-icon"></i>
+                                <h4 class="feat-title">Գնումների պլանավորում</h4>
+
+                                <p class="plan">Համակարգի միջոցով Պատասխանատու ստորաբաժանման ձևավորում, ներառյալ
+                                    վերջինիս վերաբերող անհրաժեշտ փաստաթղթերը,
+                                    Համակարգում առկա գնման առարկաների (ներառյալ համապատասխան CPV կոդերը,
+                                    տեխնիկական բնութագրերը և շուկայական գները) մեծ բազայի օգնությամբ գնումների պլանի
+                                    կազմում կամ փոփոխություն,
+                                    ցանկից համապատասխան գնման առարկաների ընտրության միջոցով:
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-feature wow zoomIn">
+                                <i class="fa fa-sitemap feature-icon"></i>
+                                <h4 class="feat-title">Գնման գործընթացի կազմակերպում</h4>
+                                <p class="plan">Գնումների մասին ՀՀ օրենսդրությամբ սահմանված, մեկ անձից գնման
+                                    գործընթացների կազմակերպում,
+                                    մրցակցային ձեւերի փաստաթղթաշրջանառության ավտոմատացում՝ օրենսդրությամբ
+                                    պահանջվող բոլոր փաստաթղթերի ձեւավորում Համակարգի միջոցով:
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-feature wow zoomIn">
+                                <i class="fa fa-file-text-o feature-icon"></i>
+                                <h4 class="feat-title"> Պայմանագրերի կառավարում</h4>
+                                <p class="plan">Համակարգի միջոցով կնքված յուրաքանչյուր պայմանագրի շրջանակներում
+                                    պատվերների իրականացում,
+                                    պահեստի շարժին հետևելու հնարավորություն, յուրաքանչյուր պատվերի համար
+                                    հանձնման-ընդունման փաստաթղթերի ավտոմատ կերպով կազմում
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-table-content">
+                    <div class="row pricing-pet-table-content__slider">
+                        <div class="col-md-3 col-sm-6 col-xs-12 ">
+                            <div class="single-table-price wow fadeInUp free-package" data-wow-duration="0.5s"
+                                 data-wow-delay="0.5s">
+                                <div class="price-header ">
+                                    <span class="price-title">Անվճար փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">0</sup>
+                                        <span class="price-down">դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Գնումների պլանավորում</li>
+                                        <li>Գնման գործընթացի կազմակերպում</li>
+                                        <li>Պայմանագրերի կառավարում</li>
+                                    </ul>
+
+                                </div>
+                                <div class="price-footer">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp " data-wow-duration="0.5s"
+                                 data-wow-delay="0.5s">
+                                <div class="price-header">
+                                    <span class="price-title">5 ընթացակարգ</span>
+                                    <div class="price">
+                                        <sup class="price-up">29 000</sup>
+                                        <span class="price-down">դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li> 1 տարի</li>
+                                        <li>Գնումների պլանավորում</li>
+                                        <li>Գնման գործընթացի կազմակերպում</li>
+                                        <li>Պայմանագրերի կառավարում</li>
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title">10 ընթացակարգ</span>
+                                    <div class="price">
+                                        <sup class="price-up">41 000 </sup>
+                                        <span class="price-down">դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li> 1 տարի</li>
+                                        <li>Գնումների պլանավորում</li>
+                                        <li>Գնման գործընթացի կազմակերպում</li>
+                                        <li>Պայմանագրերի կառավարում</li>
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title">15 ընթացակարգ</span>
+                                    <div class="price">
+                                        <sup class="price-up">53 000</sup>
+                                        <span class="price-down">դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li> 1 տարի</li>
+                                        <li>Գնումների պլանավորում</li>
+                                        <li>Գնման գործընթացի կազմակերպում</li>
+                                        <li>Պայմանագրերի կառավարում</li>
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp" data-wow-duration="1.15s"
+                                 data-wow-delay="1.15s">
+                                <div class="price-header">
+                                    <span class="price-title">20 ընթացակարգ</span>
+                                    <div class="price">
+                                        <sup class="price-up">65 000</sup>
+                                        <span class="price-down">դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li> 1 տարի</li>
+                                        <li>Գնումների պլանավորում
+
+                                        </li>
+                                        <li>Գնման գործընթացի կազմակերպում
+
+                                        </li>
+                                        <li>Պայմանագրերի կառավարում
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title">25 ընթացակարգ</span>
+                                    <div class="price">
+                                        <sup class="price-up">77 000</sup>
+                                        <span class="price-down">դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li> 1 տարի</li>
+                                        <li>Գնումների պլանավորում</li>
+                                        <li>Գնման գործընթացի կազմակերպում</li>
+                                        <li>Պայմանագրերի կառավարում</li>
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title">30 ընթացակարգ</span>
+                                    <div class="price">
+                                        <sup class="price-up">89 000 </sup>
+                                        <span class="price-down">դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li> 1 տարի</li>
+                                        <li>Գնումների պլանավորում</li>
+                                        <li>Գնման գործընթացի կազմակերպում</li>
+                                        <li>Պայմանագրերի կառավարում</li>
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp" data-wow-duration="1.15s"
+                                 data-wow-delay="1.15s">
+                                <div class="price-header">
+                                    <span class="price-title">Անսահմանափակ</span>
+                                    <div class="price">
+                                        <sup class="price-up">99 000</sup>
+                                        <span class="price-down">դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li> 1 տարի</li>
+                                        <li>Գնումների պլանավորում</li>
+                                        <li>Գնման գործընթացի կազմակերպում</li>
+                                        <li>Պայմանագրերի կառավարում</li>
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h3 class="title">ՄԱՍՆԱՎՈՐ ՊԱՏՎԻՐԱՏՈՒՆԵՐԻՆ</h3>
+
+                <div class="feature-content">
+                    <div class="row">
+                        <h3 class="title">Ծառայությունները երաշխավորված են</h3>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="single-feature wow zoomIn">
+                                <p class="plan">&nbsp;&nbsp;Ծառայությունները արդյունավետ չլինելու կամ մատուցված
+                                    ծառայություններից հիմնավորված
+                                    դժգոհ լինելու դեպքում վճարված գումարը վերադարձվում է: Մնացած ժամկետում
+                                    ծառայությունները մատուցվում են ԱՆՎՃԱՐ:
+                                </p>
+                                <p class="plan">&nbsp;&nbsp;Պետական մրցույթներին համակարգի միջոցով մասնակցության հայտերի
+                                    պատրաստման գործիքից օգտվելիս,
+                                    առկա է խմբագրման հնարավորություն և ProTender թիմը պատասխանատվություն չի կրում հայտի
+                                    բովանդակության, դրա պատճառով մերժման համար։
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-table-content">
+                    <div class="owl-carousel owl-theme">
+
+                        <div class=" col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-md-3 col-sm-6 col-xs-12 single-table-price wow fadeInUp masnavor" data-wow-duration="0.5s"
+                                 data-wow-delay="0.5s">
+                                <div class="price-header">
+                                    <span class="price-title pack-1">Անվճար փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">0</sup>
+                                        <span class="price-down">դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="price-footer">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title pack-3">Պրեմիում փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">1 ամիս</sup>
+                                        <span class="price-down">19 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+                                        <li>Պետական մրցույթներին համակարգի միջոցով մասնակցության հայտերի,
+                                            որակավորման
+                                            և պայմանագրի ապահովումների պատրաստում / ԱՆՍԱՀՄԱՆԱՓԱԿ /
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="1.15s"
+                                 data-wow-delay="1.15s">
+                                <div class="price-header">
+                                    <span class="price-title pack-4">Գոլդ փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">1 ամիս</sup>
+                                        <span class="price-down"> 29 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+                                        <li>Պետական մրցույթներին համակարգի միջոցով մասնակցության հայտերի,
+                                            որակավորման
+                                            և պայմանագրի ապահովումների պատրաստում / ԱՆՍԱՀՄԱՆԱՓԱԿ /
+                                        </li>
+                                        <li>
+                                            Հաղթած տենդերների պահեստի ձևավորում, կառավարում, ընդունման-հանձնման
+                                            արձանագրությունների և ակտերի՝ համակարգի միջոցով պատրաստում
+                                        </li>
+                                        <li>
+                                            Պետական գնումների խորհրդատվություն
+                                        </li>
+                                        <li>
+                                            Գնումների մասին օրենսդրական փոփոխությունների վերաբերյալ ծանուցում
+                                        </li>
+                                        <li>
+                                            Նախահաշվային գնի տրամադրում
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title pack-2">Էկոնոմ փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">3 ամիս</sup>
+                                        <span class="price-down">19 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title pack-3">Պրեմիում փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">3 ամիս</sup>
+                                        <span class="price-down">39 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+                                        <li>Պետական մրցույթներին համակարգի միջոցով մասնակցության հայտերի,
+                                            որակավորման
+                                            և պայմանագրի ապահովումների պատրաստում / ԱՆՍԱՀՄԱՆԱՓԱԿ /
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="1.15s"
+                                 data-wow-delay="1.15s">
+                                <div class="price-header">
+                                    <span class="price-title pack-4">Գոլդ փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">3 ամիս</sup>
+                                        <span class="price-down">49 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+                                        <li>Պետական մրցույթներին համակարգի միջոցով մասնակցության հայտերի,
+                                            որակավորման
+                                            և պայմանագրի ապահովումների պատրաստում / ԱՆՍԱՀՄԱՆԱՓԱԿ /
+                                        </li>
+                                        <li>
+                                            Հաղթած տենդերների պահեստի ձևավորում, կառավարում, ընդունման-հանձնման
+                                            արձանագրությունների և ակտերի՝ համակարգի միջոցով պատրաստում
+                                        </li>
+                                        <li>
+                                            Պետական գնումների խորհրդատվություն
+                                        </li>
+                                        <li>
+                                            Գնումների մասին օրենսդրական փոփոխությունների վերաբերյալ ծանուցում
+                                        </li>
+                                        <li>
+                                            Նախահաշվային գնի տրամադրում
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title pack-2">Էկոնոմ փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">6 ամիս</sup>
+                                        <span class="price-down">29 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title pack-3">Պրեմիում փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">6 ամիս</sup>
+                                        <span class="price-down">49 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+                                        <li>Պետական մրցույթներին համակարգի միջոցով մասնակցության հայտերի,
+                                            որակավորման
+                                            և պայմանագրի ապահովումների պատրաստում / ԱՆՍԱՀՄԱՆԱՓԱԿ /
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="1.15s"
+                                 data-wow-delay="1.15s">
+                                <div class="price-header">
+                                    <span class="price-title pack-4">Գոլդ փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">6 ամիս</sup>
+                                        <span class="price-down">69 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+                                        <li>Պետական մրցույթներին համակարգի միջոցով մասնակցության հայտերի,
+                                            որակավորման
+                                            և պայմանագրի ապահովումների պատրաստում / ԱՆՍԱՀՄԱՆԱՓԱԿ /
+                                        </li>
+                                        <li>
+                                            Հաղթած տենդերների պահեստի ձևավորում, կառավարում, ընդունման-հանձնման
+                                            արձանագրությունների և ակտերի՝ համակարգի միջոցով պատրաստում
+                                        </li>
+                                        <li>
+                                            Պետական գնումների խորհրդատվություն
+                                        </li>
+                                        <li>
+                                            Գնումների մասին օրենսդրական փոփոխությունների վերաբերյալ ծանուցում
+                                        </li>
+                                        <li>
+                                            Նախահաշվային գնի տրամադրում
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title pack-2">Էկոնոմ փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">1 տարի</sup>
+                                        <span class="price-down">49 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="0.75s"
+                                 data-wow-delay="0.75s">
+                                <div class="price-header">
+                                    <span class="price-title pack-3">Պրեմիում փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">1 տարի</sup>
+                                        <span class="price-down">69 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+                                        <li>Պետական մրցույթներին համակարգի միջոցով մասնակցության հայտերի,
+                                            որակավորման
+                                            և պայմանագրի ապահովումների պատրաստում / ԱՆՍԱՀՄԱՆԱՓԱԿ /
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-table-price wow fadeInUp masnavor" data-wow-duration="1.15s"
+                                 data-wow-delay="1.15s">
+                                <div class="price-header">
+                                    <span class="price-title pack-4">Գոլդ փաթեթ</span>
+                                    <div class="price">
+                                        <sup class="price-up">1 տարի</sup>
+                                        <span class="price-down">99 000 դրամ</span>
+                                    </div>
+                                </div>
+                                <div class="price-article">
+                                    <ul>
+                                        <li>Համակարգի միջոցով տենդերներ կազմակերպելու և մասնակցելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>« Անժամկետ տենդերներ » հարթակից գնումներ և վաճառքներ անելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Տարբեր տեսակի ֆիլտրներից օգտվելու հնարավորություն</li>
+                                        <li>ՀՀ-ում տեղի ունեցող տենդերների վիճակագրությունից օգտվելու
+                                            հնարավորություն
+                                        </li>
+                                        <li>Պետական մեկ անձից գնման գործընթացներին համակարգի միջոցով գնային առաջարկ
+                                            ներկայացնելու հնարավորություն
+                                        </li>
+
+                                    </ul>
+                                    <ul class="patet-hover">
+                                        <li>iTender հարթակում որպես գործընկեր ներկայացնելու հնարավորություն</li>
+                                        <li>Այլ մրցույթների հրավերների ստացում /պետական և մասնավոր/</li>
+                                        <li>Այլ մրցույթների մասնակիցներ, գներ, հաղթողներ</li>
+                                        <li>Պետական մրցույթներին համակարգի միջոցով մասնակցության հայտերի,
+                                            որակավորման
+                                            և պայմանագրի ապահովումների պատրաստում / ԱՆՍԱՀՄԱՆԱՓԱԿ /
+                                        </li>
+                                        <li>
+                                            Հաղթած տենդերների պահեստի ձևավորում, կառավարում, ընդունման-հանձնման
+                                            արձանագրությունների և ակտերի՝ համակարգի միջոցով պատրաստում
+                                        </li>
+                                        <li>
+                                            Պետական գնումների խորհրդատվություն
+                                        </li>
+                                        <li>
+                                            Գնումների մասին օրենսդրական փոփոխությունների վերաբերյալ ծանուցում
+                                        </li>
+                                        <li>
+                                            Նախահաշվային գնի տրամադրում
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="price-footer">
+                                    <a class="purchase-btn" href="#">Գնել</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+</section>
+
+
+<section id="our-team">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="title-area">
+                    <h2 class="title">ՄԵՐ ԹԻՄԸ</h2>
+                    <span class="line"></span>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="our-team-content">
+                    <div class="row latest-news-content__sider">
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-team-member">
+                                <div class="team-member-img">
+                                    <img src="assets/images/team-member-2.png" alt="team member img">
+                                </div>
+                                <div class="team-member-name">
+                                    <p>John Doe</p>
+                                    <span>CEO</span>
+                                </div>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                <div class="team-member-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-team-member">
+                                <div class="team-member-img">
+                                    <img src="assets/images/team-member-1.png" alt="team member img">
+                                </div>
+                                <div class="team-member-name">
+                                    <p>Bernice Neumann</p>
+                                    <span>Designer</span>
+                                </div>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                <div class="team-member-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-team-member">
+                                <div class="team-member-img">
+                                    <img src="assets/images/team-member-3.png" alt="team member img">
+                                </div>
+                                <div class="team-member-name">
+                                    <p>Dvid Cameron</p>
+                                    <span>Developer</span>
+                                </div>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                <div class="team-member-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-team-member">
+                                <div class="team-member-img">
+                                    <img src="assets/images/team-member-1.png" alt="team member img">
+                                </div>
+                                <div class="team-member-name">
+                                    <p>Bernice Neumann</p>
+                                    <span>Designer</span>
+                                </div>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                <div class="team-member-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title-area">
+                            <h2 class="title">ՀԱՃԱԽՈՐԴՆԵՐԻ ԿԱՐԾԻՔՆԵՐԸ</h2>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+
+                        <div class="testimonial-slider">
+
+                            <div class="single-slider">
+                                <div class="testimonial-img">
+                                    <img src="assets/images/testi1.jpg" alt="testimonial image">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour, or randomised words
+                                        which don't look even slightly believable.</p>
+                                    <h6>Bernice Neumann, <span>Designer</span></h6>
+                                </div>
+                            </div>
+
+                            <div class="single-slider">
+                                <div class="testimonial-img">
+                                    <img src="assets/images/testi3.jpg" alt="testimonial image">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour, or randomised words
+                                        which don't look even slightly believable.</p>
+                                    <h6>John Dow, <span>CEO</span></h6>
+                                </div>
+                            </div>
+
+                            <div class="single-slider">
+                                <div class="testimonial-img">
+                                    <img src="assets/images/testi2.jpg" alt="testimonial image">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour, or randomised words
+                                        which don't look even slightly believable.</p>
+                                    <h6>Michel, <span>Developer</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </div>
+</section>
+
+
+<section id="clients-brand">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-area">
+                    <h2 class="title">ՄԵՐ ԳՈՐԾԸՆԿԵՐՆԵՐԸ</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="clients-brand-area">
+                    <ul class="clients-brand-slide">
+                        <li class="col-md-3">
+                            <div class="single-brand" data-toggle="modal" data-target="#exampleModal">
+                                <img src="assets/images/amazon.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="single-brand">
+                                <img src="assets/images/discovery.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="single-brand">
+                                <img src="assets/images/envato.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="single-brand">
+                                <img src="assets/images/tuenti.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="single-brand">
+                                <img src="assets/images/amazon.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="single-brand">
+                                <img src="assets/images/discovery.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="single-brand">
+                                <img src="assets/images/envato.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="single-brand">
+                                <img src="assets/images/tuenti.png" alt="img">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <!-- Modal -->
+            <div class="modal fade parents-list" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+
+                            <div class="contact-area-left modal-title" id="exampleModalLabel">
+                                <h4>ՊԻ ԿԱ ԷՖ ԱՈՒԴԻՏ ՍԵՐՎԻՍ</h4>
+                                <button type="button" class="close" id="close-btn" data-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-md-5 col-xs-12 partner_logo">
+                                <img src="assets/images/amazon-1.png" alt="img"/>
+                            </div>
+                            <div class="col-md-7 col-xs-12">
+                                <div class="partner_cotacts">
+                                    <div class="box-label">Հասցե</div>
+                                    <div class="box-info">Վարդանանց 18/1</div>
+                                </div>
+                                <div class="partner_cotacts">
+                                    <div class="box-label">Հեռախոսահամար</div>
+                                    <div class="box-info">+37411577544</div>
+                                </div>
+                                <div class="partner_cotacts">
+                                    <div class="box-label">Էլ․ փոստ</div>
+                                    <div class="box-info">auditservicellc@gmail.com</div>
+                                </div>
+                                <div class="partner_cotacts">
+                                    <div class="box-label">Գործունեության ոլորտը</div>
+                                    <div class="box-info pad">Աուդիտորական ծառայություններ, Հաշվապահական
+                                        ծառայություններ
+                                    </div>
+                                </div>
+                                <div class="partner_cotacts">
+                                    <div class="box-label">Վեբ կայք</div>
+                                    <div class="box-info">Վարդանանց 18/1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="subscribe">
+    <div class="subscribe-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="subscribe-area">
+                        <h2 class="wow fadeInUp">ԲԱԺԱՆՈՐԴԱԳՐՎԵՔ ՎԵՐՋԻՆ ՆՈՐՈՒԹՅՈՒՆՆԵՐԻՆ</h2>
+                        <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s"
+                              data-wow-delay="0.5s">
+                            <input type="text" placeholder="Էլ․ փոստ . . .">
+                            <button class="subscribe-btn" type="submit">Ուղարկել</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer_center">
+            <div class="fmenu">
+                <ul>
+                    <li><a href="index.html">Գլխավոր</a></li>
+                    <li><a href="tenderner.html">Տենդերներ</a></li>
+                    <li><a href="information.html">Տեղեկատվություն</a></li>
+                    <li><a href="help.html">Օգնություն</a></li>
+                    <li><a href="contact.html">Կապ</a></li>
+                    <li><a href="regulation.html">Կանոնակարգ</a></li>
+                </ul>
+            </div>
+            <div class="flinks mob-link">
+                <p class="flink_t">Հղումներ</p>
+                <ul>
+                    <li><a href="https://protender.am/" target="_blank">protender.am</a></li>
+                    <li><a href="https://egprocurement.am/" target="_blank">egprocurement.am</a></li>
+                </ul>
+            </div>
+            <div class="flinks flinks-02">
+                <a class="flink_t" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+                   aria-expanded="false" aria-controls="multiCollapseExample1">Կոնտակտներ <i class="fa fa-plus"></i></a>
+                <ul class="pk-contact">
+                    <li><a href="tel:+37410244974">+374 10 24 49 74</a></li>
+                    <li><a href="tel:+37499244974">+374 99 24 49 74</a></li>
+                    <li><a href="tel:+37441244974">+374 41 24 49 74</a></li>
+                    <li><a href="mailto:info@itender.am">info@itender.am</a></li>
+                </ul>
+                <div class="row mob-contact">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                <li><a href="tel:+37410244974">+374 10 24 49 74</a></li>
+                                <li><a href="tel:+37499244974">+374 99 24 49 74</a></li>
+                                <li><a href="tel:+37441244974">+374 41 24 49 74</a></li>
+                                <li><a href="mailto:info@itender.am">info@itender.am</a></li>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo-footer.png" height="396" width="1569"/>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="footer-right">
+                            <a href="https://web.facebook.com/ProTender/"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://www.linkedin.com/company/11787444/admin/updates/"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/channel/UCD3gwb1H1NE9qujwPzCd3pg?view_as=subscriber"><i
+                                    class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="mob-link-02">
+                    <li><a href="https://protender.am/" target="_blank">protender.am</a></li>
+                    <li><a href="https://egprocurement.am/" target="_blank">egprocurement.am</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer1">
+        <div class="footer1_center container">
+            <div class="footer1_left">
+                <a href="#" target="_blanck"></a>
+            </div>
+            <div class="footer1_right">
+                &#169; 2020 Բոլոր հեղինակային իրավունքները պաշտպանված են
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+
+<!--&lt;!&ndash; jQuery &ndash;&gt;-->
+<!--<script src="/examples/libs/jquery/jquery-3.4.1.min.js"></script>-->
+<!--&lt;!&ndash; Bootstrap JS &ndash;&gt;-->
+<!--<script src="/examples/libs/bootstrap-4/js/bootstrap.bundle.min.js"></script>-->
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--<script src="./node_modules/jquery/dist/jquery.js"></script>-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.js"></script>
+
+<script src="assets/js/script.js"></script>
+
+<!-- Slick Slider -->
+<script type="text/javascript" src="assets/js/slick.js"></script>
+<script src="dist/owl.carousel.min.js"></script>
+<script src="main_owl_slide.js"></script>
+<!-- mixit slider -->
+<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+<!-- Add fancyBox -->
+<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+<!-- counter -->
+<script src="assets/js/waypoints.js"></script>
+<script src="assets/js/jquery.counterup.js"></script>
+<!-- Wow animation -->
+<script type="text/javascript" src="assets/js/wow.js"></script>
+<!-- progress bar   -->
+<script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>
+
+
+<!-- Custom js -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+
+</body>
+</html>

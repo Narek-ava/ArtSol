@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Պետական պատվիրատու</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon_1.ico"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Main style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen"/>
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/>
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/>
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../Готовые Проекты/StomMedia/seo/css/main.scss">
+
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+<div class="login-body body-02">
+<div class="col-12 center-login">
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="auth-logo-box">
+                        <a href="index.html" class="logo logo-admin">
+                            <img src="assets/images/favicon_1.ico" alt="Itender" height="55" class="auth-logo">
+                        </a>
+                    </div>
+                    <form class="reg_form state_reg_form user_register_form" action="" method="post">
+
+
+                            <div class="reg_form_row">
+                                <label>Էլ. փոստ *</label>
+                                <input  type="email" placeholder="Էլ. փոստ" class="user_name reg_mail" name="r_mail" required="">
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Հեռախոս *</label>
+                                <input  type="text" placeholder="077 24 88 11" onkeypress="return isNumberKeyHvhh(event)" class="user_name reg_phone txtboxToFilter" name="r_phone" required="">
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Գաղտնաբառ *</label>
+
+                                <div class="pass_block">
+                                    <input  type="password" placeholder="Նվազագույնը՝ 6 սինվոլ" class="user_name  reg_pass1 reg_pass" name="r_pass" required="">
+                                    <span class="show_hide_pass"><i toggle-type="reg_pass1" class="fa fa-eye" aria-hidden="true"></i></span>
+
+                                </div>
+
+                                <small class="checked_pass"><i class="fa fa-check" aria-hidden="true"></i></small>
+                                <small class="times_pass"><i class="fa fa-times" aria-hidden="true"></i></small>
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Կրկնել գաղտնաբառ *</label>
+                                <div class="pass_block">
+                                    <input  type="password" placeholder="Կրկնել գաղտնաբառ" class="user_name  reg_pass2 reg_pass" name="r_pass_repeat" required="">
+                                    <span class="show_hide_pass"><i toggle-type="reg_pass2" class="fa fa-eye" aria-hidden="true"></i></span>
+                                </div>
+                                <small class="checked_pass"><i class="fa fa-check" aria-hidden="true"></i></small>
+                                <small class="times_pass"><i class="fa fa-times" aria-hidden="true"></i></small>
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Կազմակերպության անվանում*</label>
+                                <div class="row address">
+                                    <div class="">
+                                        <input placeholder="Կազմակերպության անվանում" type="text" name="company_name" class="user_name state_user_name masnakic_user_name" value="" required="">
+                                    </div>
+                                    <div class="">
+                                        <select name="company_type" class="user_name user_name_short">
+                                            <option value="">Ընտրել</option>
+                                            <option value="ՊՈԱԿ">ՊՈԱԿ</option>
+                                            <option value="ՍՊԸ">ՍՊԸ</option>
+                                            <option value="ՓԲԸ">ՓԲԸ</option>
+                                            <option value="ՀՈԱԿ">ՀՈԱԿ</option>
+                                            <option value="Հիմնադրամ">Հիմնադրամ</option>
+                                            <option value="Համայնք">Համայնք</option>
+                                            <option value="քաղաքապետարան">քաղաքապետարան</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Կազմակերպության անվանում ռուսերեն*</label>
+                                <div class="row address">
+                                    <div class="">
+                                        <input placeholder="Կազմակերպության անվանում ռուսերեն" type="text" name="company_name_ru" class="user_name state_user_name_ru masnakic_user_name" value="" required="">
+                                    </div>
+                                    <div class="">
+                                        <select name="company_type_ru" class="user_name user_name_short">
+                                            <option value="">Выбрать</option>
+                                            <option value="ГНКО">ГНКО</option>
+                                            <option value="ООО">ООО</option>
+                                            <option value="ЗАО">ЗАО</option>
+                                            <option value="ОНКО">ОНКО</option>
+                                            <option value="фонд">фонд</option>
+                                            <option value="община">община</option>
+                                            <option value="муниципалитет">муниципалитет</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Գործունեության հասցե *</label>
+                                <div class="row address">
+                                    <div class="">
+                                        <input placeholder="Մարզ" type="text" name="company_region" class="company_region user_name user_name_short" value="">
+                                    </div>
+                                    <div class="">
+                                        <input placeholder="Քաղաք / Գյուղ" type="text" name="company_city" class="company_city user_name user_name_short" value="" required="">
+                                    </div>
+                                    <div class="">
+                                        <input placeholder="Հասցե" type="text" name="company_address" class="company_address user_name user_name_long" value="" required="">
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Գործունեության հասցե ռուսերեն*</label>
+                                <div class="row address">
+                                    <div class="">
+                                        <input placeholder="Մարզ ռուսերեն" type="text" name="company_region_ru" class="company_region_ru user_name user_name_short" value="">
+                                    </div>
+                                    <div class="">
+                                        <input placeholder="Քաղաք / Գյուղ" type="text" name="company_city_ru" class="company_city_ru user_name user_name_short" value="" required="">
+                                    </div>
+                                    <div class="">
+                                        <input placeholder="Հասցե ռուսերեն" type="text" name="company_address_ru" class="company_address_ru user_name user_name_long" value="" required="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="reg_form_row">
+                                <label>Բանկ / Գանձապետարան *</label>
+                                <input placeholder="Բանկ / Գանձապետարան" type="text" name="bank_name" class="bank_name user_name" value="" required="">
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Բանկ / Գանձապետարան ռուսերեն*</label>
+                                <input placeholder="Բանկ / Գանձապետարան ռուսերեն" type="text" name="bank_name_ru" class="bank_name_ru user_name" value="" required="">
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Հաշվեհամար *</label>
+                                <input placeholder="Հաշվեհամար" type="text" name="bank_account" maxlength="16" onkeypress="return isNumberKeyHvhh(event)" class="bank_account user_address" value="" required="">
+                            </div>
+                            <div class="reg_form_row">
+                                <label>ՀՎՀՀ *</label>
+                                <input placeholder="ՀՎՀՀ" type="text" name="hvhh" class="state_hvhh user_address" maxlength="8" onkeypress="return isNumberKeyHvhh(event)" value="" required="">
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Տնօրենի Անուն Ազգանուն *</label>
+                                <input placeholder="Անուն Ազգանուն" type="text" name="director_name" class="director_name user_hvhh" value="" required="">
+                            </div>
+                            <div class="reg_form_row">
+                                <label>Տնօրենի Անուն Ազգանուն ռուսերեն*</label>
+                                <input placeholder="Անուն Ազգանուն ռուսերեն" type="text" name="director_name_ru" class="director_name_ru user_hvhh" value="" required="">
+                            </div>
+                            <label class="myCheckbox" style="margin-top: 12px;">
+                                <input type="checkbox" name="r_remember" value="1" class="r_checkbox">
+                                <span></span>
+                                <p class="i_agree i_agree_tender">Ուսումնասիրել եմ <a href="regulation.html" target="_blank">iTender կանոնակարգը</a>, տեղեկացված եմ կազմակերպիչների և մասնակիցների իրավունքների և պարտականությունների մասին, ծանոթացել եմ համակարգի օգտագործման պայմանների հետ, համաձայն եմ գրանցվել և օգտվել համակարգից </p>
+
+                            </label>
+                            <div class="reg_form">
+                                <label class="robot">
+                                    <span>Անվտանգության կոդ՝</span>
+                                    <a class="reload_captcha" onclick="reload_captcha()"><img src="https://www.itender.am/images/reload.png" alt="reload captcha"></a>
+                                    <span class="captcha_query">
+							3 + 4 = </span>
+                                    <input type="text" name="captcha_code" class="captcha_code txtboxToFilter">
+                                </label>
+                            </div>
+                            <input type="submit" name="register_ok" class="save_user_info_reg" id="send_order" value="Գրանցվել">
+<!--                                <input type="submit" class="submit save_user_info_reg"  name="r_reg" value="Գրանցում" onclick="register_state_user(0)">-->
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.js"></script>
+
+<script src="assets/js/script.js"></script>
+
+<!-- Slick Slider -->
+<script type="text/javascript" src="assets/js/slick.js"></script>
+<!-- mixit slider -->
+<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+<!-- Add fancyBox -->
+<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+<!-- counter -->
+<script src="assets/js/waypoints.js"></script>
+<script src="assets/js/jquery.counterup.js"></script>
+<!-- Wow animation -->
+<script type="text/javascript" src="assets/js/wow.js"></script>
+<!-- progress bar   -->
+<script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>
+
+
+<!-- Custom js -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>

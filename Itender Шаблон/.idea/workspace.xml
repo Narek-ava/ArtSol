@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="daf91e28-93ab-4864-aff8-320bb2c06c2a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fGKRNYAXbfCxwaBDG57H9SzUwj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="C:/slider" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="daf91e28-93ab-4864-aff8-320bb2c06c2a" name="Default Changelist" comment="" />
+      <created>1595838979268</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595838979268</updated>
+      <workItem from="1595838980538" duration="713000" />
+      <workItem from="1595911529553" duration="37000" />
+      <workItem from="1595926035059" duration="14859000" />
+      <workItem from="1595999906037" duration="7306000" />
+      <workItem from="1596016629317" duration="14335000" />
+      <workItem from="1596086019281" duration="2869000" />
+      <workItem from="1596091544030" duration="7059000" />
+      <workItem from="1596100041928" duration="11247000" />
+      <workItem from="1596177347824" duration="207000" />
+      <workItem from="1596178354878" duration="610000" />
+      <workItem from="1596189231888" duration="18238000" />
+      <workItem from="1596260576922" duration="8846000" />
+      <workItem from="1596430776828" duration="22254000" />
+      <workItem from="1596517457992" duration="22924000" />
+      <workItem from="1596604104506" duration="22826000" />
+      <workItem from="1596689943366" duration="25504000" />
+      <workItem from="1596782730175" duration="20218000" />
+      <workItem from="1596866180329" duration="10828000" />
+      <workItem from="1597038519977" duration="27755000" />
+      <workItem from="1597121743085" duration="5704000" />
+      <workItem from="1597234148168" duration="1293000" />
+      <workItem from="1597326415922" duration="5000" />
+      <workItem from="1597650903864" duration="15942000" />
+      <workItem from="1597684362143" duration="677000" />
+      <workItem from="1597726497061" duration="28777000" />
+      <workItem from="1597813097351" duration="20590000" />
+      <workItem from="1597906465281" duration="8724000" />
+      <workItem from="1597931006458" duration="3204000" />
+      <workItem from="1597990689472" duration="2639000" />
+      <workItem from="1597997176501" duration="2484000" />
+      <workItem from="1598345497686" duration="17673000" />
+      <workItem from="1598421760545" duration="14641000" />
+      <workItem from="1599464502580" duration="22517000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="692" y="372" key="#SCSS_Lint" timestamp="1597084385755">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="692" y="372" key="#SCSS_Lint/0.0.1920.1040@0.0.1920.1040" timestamp="1597084385755" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597136075036">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597136075036" />
+    <state x="628" y="297" key="EditFileWatcherDialog" timestamp="1597040841460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="297" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597040841460" />
+    <state x="526" y="194" key="FileChooserDialogImpl" timestamp="1599464539839">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="526" y="194" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1599464539839" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596205424321" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598437687461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598437687461" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1598430310259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598430310259" />
+    <state x="466" y="226" width="1130" height="814" key="find.popup" timestamp="1598433841228">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="466" y="226" width="1130" height="814" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598433841228" />
+  </component>
+</project>

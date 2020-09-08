@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ՏԵՆԴԵՐՆԵՐ</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon_1.ico"/>
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/> 
+    <!-- Bootstrap progressbar  --> 
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/> 
+     <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+   <!-- END PRELOADER -->
+
+   <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+   <!-- END SCROLL TOP BUTTON -->
+
+    <!-- Start header -->
+  <header id="header">
+    <!-- header top search -->
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+            <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s" id="m_search" style="display: inline-block;">
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- header bottom -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+
+          <div class="col-md-9 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+37410244974">+374 10 24 49 74</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:info@itender.am"> info@itender.am</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 lang-bloc">
+            <div class="lang">
+              <ul class="nav navbar-nav navbar-right lang-bar">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle active-lang" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    ARM <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu other-langs">
+                    <li class="plain-link">
+                      <a href="#">
+                        <img src="assets/images/flags/en.png">ENG</a>
+                    </li>
+                    <li class="plain-link">
+                      <a href="#">
+                        <img src="assets/images/flags/ru.png">RUS</a>
+                    </li>
+                    <li class="plain-link">
+                      <a href="#">
+                        <img src="assets/images/flags/arm.png">ARM</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="header-login">
+              <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login /
+                Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header -->
+
+  <!-- Start login modal window -->
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-- Start login section -->
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="User name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+             <div class="loginbox">
+              <label><input type="checkbox"><span>Remember me</span></label>
+              <button class="btn signin-btn" type="button">SIGN IN</button>
+            </div>                    
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <a href="#">Forgot password ?</a>
+          <span>No account ? <a id="signup-btn" href="#">Sign Up.</a></span>            
+        </div>
+      </div>
+      <!-- Start signup section -->
+      <div id="signup-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-lock"></i>Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input placeholder="Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <div class="signupbox">
+              <span>Already got account? <a id="login-btn" href="#">Sign In.</a></span>
+            </div>
+            <div class="loginbox">
+              <label><input type="checkbox"><span>Remember it?</span><i class="fa"></i></label>
+              <button class="btn signin-btn" type="button">SIGN UP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End login modal window -->
+
+
+  <section id="menu-area">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo_1.png" alt="Itender"/></a>
+          <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li ><a href="index.html">Գլխավոր</a></li>
+            <li class="active"><a href="tenderner.html">Տենդերներ</a></li>
+            <li ><a href="information.html">Տեղեկատվություն</a></li>
+            <li><a href="help.html">Օգնություն</a></li>
+            <li><a href="contact.html">Կապ</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </section>
+
+  <section id="single-page-header">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-left">
+              <h2>ITENDER ՄՐՑՈՒՅԹՆԵՐ</h2>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+                <li><a href="index.html">Գլխավոր</a></li>
+                <li class="active">ՏԵՆԴԵՐՆԵՐ</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="table">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="contact-area-left">
+          <h4>ITENDER ՄՐՑՈՒՅԹՆԵՐ</h4>
+          <p>Բոլորը տեսնելու համար պետք է գրանցվեք համակարգում</p>
+            <div id="grid-3">
+              <div>Մրցույթի անվանումը
+                <p class="select_tender_cats_in_home">--Ընտրել-- </p>
+                <div class="hidden_tender_choose_cats" style="display: none;">
+                  <form method="get" action="#">
+                    <div class="home_user_glob_cat_users">
+                      <p><b>Ապրանք</b></p>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="7"><span>Վառելիք</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="8"><span>Սննդամթերք</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="9"><span>Գրենական պիտույքներ և գրասենյակային նյութեր</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="10"><span>Դեղորայք և պատվաստանյութեր</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="11"><span>Ավտոպահեստամասեր</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="12"><span>Շինանյութեր</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="13"><span>Համակարգիչներ և պատճենահանող սարքավորումներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="14"><span>Գրասենյակային և կենցաղային գույք և կահույք</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="15"><span>Հանդերձանք և անկողնային պարագաներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="16"><span>Տնտեսական, սանհիգիենիկ և լվացքի միջոցներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="17"><span>Էլեկտրատեխնիկա, ռադիոտեխնիկա և կենցաղային պարագաներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="18"><span>Բժշկական սարքավորումներ, գործիքներ և պարագաներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="19"><span>Ավտոմեքենաներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="34"><span>Քիմիական նյութեր</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="48"><span>Ծաղիկներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="49"><span>Մալուխներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="50"><span>Օրգանական ապակի, ПВХ, МДФ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="54"><span>Արիշտա</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="64"><span>Սարքեր և սարքավորումներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="65"><span>Կտորեղեն</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="68"><span>Մետաղապլաստե դռներ և պատուհաններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="72"><span>Մաքրող և ախտահանող միջոցներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="20"><span>Այլ ապրանքներ</span>
+                      </div>
+                      <p><b>Աշխատանք</b></p>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="39"><span>Շինարարություն</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="40"><span>Տպագրական աշխատանքներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="41"><span>Ջեռուցման համակարգերի տեղադրման աշխատանքներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="42"><span>Հովացման /սառեցման/ համակարգերի տեղադրման աշխատանքներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="52"><span>Ավտոմեքենաների գազաբալոնների տեղադրման աշխատանքներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="66"><span>Վերականգնվող էներգետիկայի հետ կապված աշխատանքներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="69"><span>Խմելու և ոռոգման ջրերի հետ կապված շինարարական աշխատանքներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="412"><span>Կնիքների պատրաստման աշխատանքներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="43"><span>Այլ աշխատանքներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="415"><span>Ֆիլմարտադրություն</span>
+                      </div>
+                      <p><b>Ծառայություն</b></p>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="24"><span>Ավիասպասարկում</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="25"><span>Սարքերի և սարքավորումների սպասարկում</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="26"><span>Տրանսպորտային փոխադրումներ </span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="27"><span>Ցուցանակների և գովազդային վահանակների պատրաստում և տեղադրում</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="28"><span>Անվտանգության ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="29"><span>Աուդիտորական ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="30"><span>Իրավաբանական ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="31"><span>Հաշվապահական ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="32"><span>Բժշկական ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="35"><span>Ֆուրշետների և ճաշկերույթների կազմակերպում </span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="36"><span>Միջազգային բեռնափոխադրումներ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="44"><span>Փորձաքննության ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="45"><span>Ավտոտեխսպասարկման ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="46"><span>Կայքերի պատրաստման ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="47"><span>Լվացքի և մաքրման ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="51"><span>Նախագծանախահաշվային փաստաթղթերի մշակում</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="53"><span>Համակարգչային ծրագրերի ներդրման և սպասարկման ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="55"><span>Ապահովագրական ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="56"><span>Մաքսային բրոկերի ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="57"><span>Վրանների վարձակալություն</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="58"><span>LED լույսերի վարձակալություն</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="59"><span>Միջոցառումների կազմակերպման ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="60"><span>Սեմինարների, կոնֆերանսների կազմակերպում</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="61"><span>Հյուրանոցային ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="62"><span>Բեմական սարքավորումների տեղափոխում, տեղադրում,  մոնտաժում, ապամոնտաժում</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="63"><span>Համացանցի ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="70"><span>Տեխնիկական հսկողության ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="71"><span>Հեղինակային հսկողության ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="73"><span>Չափագրման ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="413"><span>Կնիքների պատրաստման ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="416"><span>Անշարժ գույքի գնահատման ծառայություններ</span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="category[]" style="width:17px;height:17px" value="33"><span>Այլ ծառայություններ</span>
+                      </div>
+                    </div>
+                    <div class="home_user_glob_settings_submit">
+                      <input type="hidden" name="cid" value="1">
+                      <input type="submit" name="" value="Պահպանել" class="save_home_user_glob_settings" id="send_order">
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div>Ծածկագիր</div>
+              <div>Մրցույթի տեսակը</div>
+              <div>Ժամկետը սկիզբ/ավարտ</div>
+              <div></div>
+              <div>Ապրանք - Գրենական պիտույքներ և գրասենյակային նյութեր</div>
+              <div>iTG-3 / 415R</div>
+              <div>Հարցում</div>
+              <div>04.08.2020 - 11.08.2020 12:00:00</div>
+              <div><a href="private-registr.html">Մասնակցել</a></div>
+
+            </div>
+          </div>
+
+        <div class="contact-area-left">
+          <h4>ԱՆԺԱՄԿԵՏ ՏԵՆԴԵՐՆԵՐ</h4>
+          <p>Բոլորը տեսնելու համար պետք է գրանցվեք համակարգում</p>
+
+
+
+          <div id="grid-4">
+            <div>Անվանումը</div>
+            <div>Ծածկագիր</div>
+            <div>Տեսակը</div>
+            <div>Դիտել</div>
+            <div>Վառելիք</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+
+          </div>
+        </div>
+
+        <div class="contact-area-left">
+          <h4>ՊԵՏԱԿԱՆ ՄԵԿ ԱՆՁԻ ԳՆՈՒՄՆԵՐ</h4>
+          <p>Բոլորը տեսնելու համար պետք է գրանցվեք համակարգում</p>
+
+          <div id="grid-5">
+            <div>Անվանումը</div>
+            <div>Ծածկագիր</div>
+            <div>Տեսակը</div>
+            <div>Ժամկետը սկիզբ/ավարտ</div>
+            <div>Դիտել</div>
+            <div>ԱՐԵՎԻԿԻ ՀԱՄԱՅՆՔԱՊԵՏԱՐԱՆ</div>
+            <div>ՀՀ-ԱՄ-ԱԳ-ՄԱ-ԱՊՁԲ-12</div>
+            <div>մասնագիտական հագուստ, հատուկ արտահագուստ և պարագաներ</div>
+            <div>2020-08-07 14:17:45 - 2020-08-07 16:25:03</div>
+            <div><a href="state-registr.html">Դիտել</a></div>
+          </div>
+        </div>
+
+        <div class="contact-area-left">
+          <h4>ԱՅԼ ՄՐՑՈՒՅԹՆԵՐ, ՄԱՍՆԱԿԻՑՆԵՐ, ԳՆԵՐ, ՀԱՂԹՈՂՆԵՐ</h4>
+          <p>Բոլորը տեսնելու համար պետք է գրանցվեք համակարգում</p>
+
+          <div id="grid-6">
+            <div>Անվանումը</div>
+            <div>Կատեգորիա
+              <p class="select_tender_cats_in_home">--Ընտրել-- </p></div>
+            <div>Ժամկետը սկիզբ/ավարտ</div>
+            <div>Նախահաշվային գին</div>
+            <div>Պատրաստել հայտ</div>
+            <div>Մրցույթի հրավեր</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer_center">
+        <div class="fmenu">
+          <ul>
+            <li><a href="index.html">Գլխավոր</a></li>
+            <li><a href="tenderner.html">Տենդերներ</a></li>
+            <li><a href="information.html">Տեղեկատվություն</a></li>
+            <li><a href="help.html">Օգնություն</a></li>
+            <li><a href="contact.html">Կապ</a></li>
+            <li><a href="regulation.html">Կանոնակարգ</a></li>
+          </ul>
+        </div>
+        <div class="flinks mob-link">
+          <p class="flink_t">Հղումներ</p>
+          <ul>
+            <li><a href="https://protender.am/" target="_blank">protender.am</a></li>
+            <li><a href="https://egprocurement.am/" target="_blank">egprocurement.am</a></li>
+          </ul>
+        </div>
+        <div class="flinks flinks-02">
+          <a class="flink_t" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Կոնտակտներ <i class="fa fa-plus"></i></a>
+          <ul class="pk-contact">
+            <li><a href="tel:+37410244974">+374 10 24 49 74</a></li>
+            <li><a href="tel:+37499244974">+374 99 24 49 74</a></li>
+            <li><a href="tel:+37441244974">+374 41 24 49 74</a></li>
+            <li><a href="mailto:info@itender.am">info@itender.am</a></li>
+          </ul>
+          <div class="row mob-contact">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                  <li><a href="tel:+37410244974">+374 10 24 49 74</a></li>
+                  <li><a href="tel:+37499244974">+374 99 24 49 74</a></li>
+                  <li><a href="tel:+37441244974">+374 41 24 49 74</a></li>
+                  <li><a href="mailto:info@itender.am">info@itender.am</a></li>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="logo">
+            <a href="#">
+              <img src="assets/images/logo-footer.png" height="396" width="1569"/>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div class="footer-right">
+                <a href="https://web.facebook.com/ProTender/"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/company/11787444/admin/updates/"><i
+                        class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCD3gwb1H1NE9qujwPzCd3pg?view_as=subscriber"><i
+                        class="fa fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <ul class="mob-link-02">
+            <li><a href="https://protender.am/" target="_blank">protender.am</a></li>
+            <li><a href="https://egprocurement.am/" target="_blank">egprocurement.am</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer1">
+      <div class="footer1_center container">
+        <div class="footer1_left">
+          <a href="#" target="_blanck"></a>
+        </div>
+        <div class="footer1_right">
+          &#169; 2020 Բոլոր հեղինակային իրավունքները պաշտպանված են
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+  <!-- End footer -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="assets/js/slick.js"></script>    
+    <!-- mixit slider -->
+    <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+    <!-- Add fancyBox -->        
+    <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+   <!-- counter -->
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.js"></script>
+    <!-- Wow animation -->
+    <script type="text/javascript" src="assets/js/wow.js"></script> 
+    <!-- progress bar   -->
+    <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>  
+    
+   
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    
+  </body>
+</html>

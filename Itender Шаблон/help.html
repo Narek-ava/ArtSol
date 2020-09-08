@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>ՕԳՆՈՒԹՅՈՒՆ</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/icon" href="assets/images/favicon_1.ico"/>
+  <!-- Font Awesome -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!-- Slick slider -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- Main style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+  <!-- Fancybox slider -->
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen"/>
+  <!-- Animate css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/>
+  <!-- Progress bar  -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/>
+  <!-- Theme color -->
+  <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+  <!-- Main Style -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Fonts -->
+
+  <!-- Open Sans for body font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!-- Lato for Title -->
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<header id="header">
+  <!-- header top search -->
+  <div class="header-top">
+    <div class="container">
+      <form action="">
+        <div id="search">
+          <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s"
+                 id="m_search" style="display: inline-block;">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- header bottom -->
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+
+        <div class="col-md-9 col-sm-6 col-xs-6">
+          <div class="header-contact">
+            <ul>
+              <li>
+                <div class="phone">
+                  <i class="fa fa-phone"></i>
+                  <a href="tel:+37410244974">+374 10 24 49 74</a>
+                </div>
+              </li>
+              <li>
+                <div class="mail">
+                  <i class="fa fa-envelope"></i>
+                  <a href="mailto:info@itender.am"> info@itender.am</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 lang-bloc">
+          <div class="lang">
+            <ul class="nav navbar-nav navbar-right lang-bar">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle active-lang" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  ARM <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu other-langs">
+                  <li class="plain-link">
+                    <a href="#">
+                      <img src="assets/images/flags/en.png">ENG</a>
+                  </li>
+                  <li class="plain-link">
+                    <a href="#">
+                      <img src="assets/images/flags/ru.png">RUS</a>
+                  </li>
+                  <li class="plain-link">
+                    <a href="#">
+                      <img src="assets/images/flags/arm.png">ARM</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="header-login">
+            <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login /
+              Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+  <div class="modal-dialog">
+    <div id="login-content" class="modal-content itenter-pop">
+      <div class="modal-header">
+        <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span
+                aria-hidden="true">×</span></button>
+        <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+                         <span class="auth-form-icon">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                         </span>
+            <input type="text" placeholder="User name" class="form-control">
+
+          </div>
+          <div class="form-group">
+                             <span class="auth-form-icon">
+                                  <i class="fa fa-lock" aria-hidden="true"></i>
+                              </span>
+            <input type="password" placeholder="Password" class="form-control">
+          </div>
+          <div class="loginbox">
+            <label class="chec-pop"><input type="checkbox"><span>Remember me</span></label>
+
+            <div class="col-sm-6 modal-footer footer-box">
+              <a id="forgot-btn" href="#" class="text-muted font-13">
+                <i class="fa fa-lock"></i>Forgot password?</a>
+            </div>
+
+          </div>
+          <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="button">
+            SIGN IN<i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        </form>
+      </div>
+      <div class="modal-footer footer-box">
+        <span>Don't have an account ?<a id="signup-btn" href="#">Sign Up</a></span>
+      </div>
+    </div>
+
+    <div id="signup-content" class="modal-content">
+      <div class="modal-header">
+        <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span
+                aria-hidden="true">×</span></button>
+        <h4 class="modal-title">Գրանցում</h4>
+      </div>
+      <div class="modal-body">
+        <div class="briefcase-bloc">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+          <a href="private-registr.html">Մասնավոր</a>
+        </div>
+        <div class="briefcase-bloc">
+          <i class="fa fa-building" aria-hidden="true"></i>
+          <a href="state-registr.html">Պետական պատվիրատու</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="forgot-content" class="modal-content">
+      <div class="modal-header">
+        <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span
+                aria-hidden="true">×</span></button>
+        <h4 class="modal-title">ԳԱՂՏՆԱԲԱՌԻ ՎԵՐԱԿԱՆԳՆՈՒՄ</h4>
+        <p>Մուտքագրեք Ձեր էլ․ փոստի հասցեն</p>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+                         <span class="auth-form-icon">
+                              <i class="fa fa-envelope-o"></i>
+                         </span>
+            <input type="text" placeholder="Enter Email" class="form-control-forgot">
+          </div>
+          <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="button">
+            Reset <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+
+          <div class="loginbox">
+            <label><span>Remember It ?</span><i class="fa"></i></label>
+            <button class="btn signin-btn" type="button">SIGN IN</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <section id="menu-area">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo_1.png" alt="Itender"/></a>
+        <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+          <li><a href="index.html">Գլխավոր</a></li>
+          <li><a href="tenderner.html">Տենդերներ</a></li>
+          <li><a href="information.html">Տեղեկատվություն</a></li>
+          <li class="active"><a href="help.html">Օգնություն</a></li>
+          <li><a href="contact.html">Կապ</a></li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</section>
+
+  <section id="single-page-header">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-left">
+              <h2>ՕԳՆՈՒԹՅՈՒՆ</h2>
+              <p>Հարգելի գործընկեր Կայքի հետևյալ բաժնում ներկայացված է օգտակար տեղեկատվություն,
+                որը նպատակ ունի օժանդակելու սույն համակարգից օգտվել ցանկացող անձանց՝ հստակ պատկերացում կազմելու համակարգի,
+                մրցույթների կազմակերպման և ընդհանուր գործընթացների վերաբերյալ:
+                Տեղեկատվությունը կազմված է ըստ առանձին բաժինների,
+                ֆունկցիաների և ներկայացված է դրանց մանրամասն նկարագրությունը:</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+                <li><a href="#">Գլխավոր</a></li>
+                <li class="active">ՕԳՆՈՒԹՅՈՒՆ</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="container ">
+  <div class="row help-box">
+    <div class="col-md-6">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <a class="link-help" href="tenderner.html">Տենդերներ</a>
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+           <div class="card-body">
+             Այս բաժնում հրապարակվում են iTender համակարգի միջոցով կազմակերպված և հրապարակման ենթակա տենդերներն ու հարցումները, անժամկետ տենդերները,
+             ՀՀ –ում և ԼՂՀ-ում պետական և մասնավոր կազմակերպությունների կողմից կազմակերպված բոլոր տենդերները՝
+             ըստ գնման առարկայի անվանման, ծածկագրի, տենդերի ժամկետների /սկիզբ, ավարտ/:
+           </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="link-help" href="regulation.html">iTender կանոնակարգ</a>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Այս բաժնում հրապարակված է iTender կանոնակարգը, որտեղ հստակ սահմանված են համակարգից օգտվող բոլոր կողմերի իրավունքներն ու պարտականությունները:
+              Այն ժամանակ առ ժամանակ փոփոխում է՝ կատարելագործվելու նկատառումներից ելնելով,
+              այդ իսկ պատճառով անհրաժեշտ է հաճախակի այցելել և տեղեկացված լինել վերջին փոփոխությունների մասին:
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="accordion" id="accordionExample01">
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <a class="link-help" href="information.html">Տեղեկատվություն</a>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Այս բաժնում պարբերաբար թարմացվում և հրապարակվում է iTender համակարգի վերաբերյալ օգտակար տեղեկություններ,
+              համակարգի վերաբերյալ տեղի ունեցած փոփոխություններ, հայտարարություններ,
+              ինչպես նաև տեղեկատվություն դասընթացների, սեմինարների, ելույթների վերաբերյալ և այլ անհրաժեշտ տեղեկություններ:
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne1">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                <a class="link-help" href="#">Մուտք/Գրանցում</a>
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Այս բաժնում տեղի է ունենում կազմակերպիչների և մասնակիցների գրանցումը և մուտքը համակարգի անձնական էջ: <br>
+              Համակարգից իրավունք ունեն օգտվելու բացառապես գրանված անձինք: Համակարգում գրանցումն անվճար է:  <br>
+              Գրանցվելիս անհրաժեշտ է մանրամասն ուսումնասիրել գրանցման պայմանները, ծանոթանալ iTender կանոնակարգի հետ,
+              խստագույնս հետևել առկա հուշումներին, ներկայացված ձևաչափերին, զերծ մնալ կեղծ տեղեկատվություն ներմուծելուց,
+              քանի որ մուտքագրված տվյալները նախապես ստուգվելու է համակարգի օպերատորի համապատասխան բաժնի կողմից և
+              միայն դրանից հետո համապատասխանող տվյալներով անձանց գրանցումն է հաստատվելու համակարգում:  <br>
+              Գրանցվելուց հետո մուտքագրված էլեկտրոնային փոստի հասցեին ստացվում է նամակ, որտեղ հետևելով հղմանը տեղի է ունենում գրանցման հաստատում: <br>
+              Այնուհետև համակարգի օպերատորի կողմից տեղի ունենում գրանցված անձանց տվյալների ստուգում:  <br>
+              Գրանցված անձանց հաշիվները ակտիվացվում են, եթե մուտքագրված տվյալները համապատասխանում են իրականությանը,
+              հակառակ դեպքում չեն ակտիվացվում և տվյալ անձը ստիպված պետք է ճշգրտի տվյալները:  <br>
+              Երկու դեպքում էլ էլեկտրոնային փոստի միջոցով գրանցված անձինք տեղեկացվում են ակտիվացման մասին: <br>
+              Որպես մասնակից գրանցված և հաջողությամբ ակտիվացված անձինք իրենց էլեկտրոնային փոստի հասցեին ստանում են նամակ, որում նշված է վեցանիշ PIN կոդ,
+              որը խիստ գաղտնի է: Այդ կոդը անհրաժեշտ է յուրաքանչյուր անգամ առաջարկ ներկայացնելիս: <br>
+              Արգելվում է կոդը տրամադրել կամ հասանելի դարձնել այլ անձանց, քանի որ դրանից բխող բոլոր հետևանքների համար պատասխանատու է
+              բացառապես գրանցված մասնակիցը: Համակարգում և որպես կազմակերպիչ և որպես մասնակից գրանցվելու համար, անհրաժեշտ է գրանցվել երկու տարբեր էլեկտրոնային հասցեներով:  <br>
+              Գրանցվելուց հետո թե կազմակերպիչները և թե մասնակիցները ունենում են իրենց համապատասխան անձնական էջերը: Հետագայում գրանցված անձինք հնարավորություն ունեն փոփոխել իրենց որոշ տվյալները:
+            </div>
+          </div>
+        </div>
+<!--        <div class="card">-->
+<!--          <div class="card-header" id="headingTwo2">-->
+<!--            <h2 class="mb-0">-->
+<!--              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">-->
+<!--                <a href="#">Վիճակագրություն</a>-->
+<!--              </button>-->
+<!--            </h2>-->
+<!--          </div>-->
+<!--          <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">-->
+<!--            <div class="card-body">-->
+<!--              Այս բաժնում ավտոմատ կերպով ձևավորվում և հրապարակվում են կազմակերպված տենդերի մասին օգտակար վիճակագրական տվյալներ:-->
+<!--              <br>-->
+<!--              Այս բաժնում կարելի է նշել ցանկացած ժամանակահատված և տեսենել, թե տվյալ ժամանակահատվածում ՀՀ-ում և ԼՂՀ-ում քանի տենդեր է կազմակերպվել թե ընդհանուր, թե առանձին կատեգորիաներով:<br>-->
+<!--              <ul>-->
+<!--                <li>Օրական կազմակերպված տենդերների քանակը - /ներկայացվելու են ըստ առանձին գնման առարկաների/</li>-->
+<!--                <li>Օրական կազմակերպված հարցումների քանակը- /ներկայացվելու են ըստ առանձին գնման առարկաների/</li>-->
+<!--                <li>Ամսական կազմակերպված տենդերների քանակը - /ներկայացվելու են ըստ առանձին գնման առարկաների/</li>-->
+<!--                <li>Ամսական կազմակերպված հարցումների քանակը - /ներկայացվելու են ըստ առանձին գնման առարկաների/</li>-->
+<!--                <li>Լավագույն տենդերները- /ներկայացվելու են ըստ առանձին գնման առարկաների/</li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container help-text">
+  <div class="contact-area-left">
+    <h4>Որպես կազմակերպիչ գրանցված անձանց մոտ առկա են հետևյալ բաժինները.</h4>
+    <h3>iTender մրցույթներ բաժնում առկա են հետևյալ ենթաբաժինները.</h3>
+  </div>
+  <p><strong><em>iTender մրցույթներ բաժնում առկա են հետևյալ ենթաբաժինները.</em></strong></p>
+
+  <p><strong>Ավելացնել մրցույթ- </strong>Այս բաժնում ձևավորվում է մրցույթի պայմանները, ինչը իրենից ներկայացնում է կազմակերպվող տենդերին և հարցմանը վերաբերող ամբողջական տեղեկատվությունը՝ տենդերի և հարցման անցկացման ժամկետներ, գնման առարկա, գնման առարկայի տեխնիկական հատկանիշներ, գնման և վճարման պայմաններ և այլ: Տվյալ բաժնում առկա են տենդերի և հարցման պայմանների ձևավորման համար բոլոր անհրաժեշտ հուշումներն ու մասնագիտական խորհուրդները: Խորհուրդ է տրվում հետևել դրանց՝ տենդերն ավելի արդյունավետ դարձնելու համար:</p>
+
+  <p><strong>Ակտիվ տենդերներ</strong>- Սրանք այն տենդերներն են, որոնք տվյալ պահին ակտիվ են, որոնց վերջնաժամկետները դեռևս ավարտված չեն:</p>
+
+  <p><strong>Խմբագրվող տենդերներ- </strong>Այստեղ պահպանվում են այն տենդերները, որոնք դեռևս հրապարակված չեն և գտնվում են ձևավորման փուլում:</p>
+
+  <p><strong>Ավարտված տենդերներ- </strong>Այստեղ գտնվում են այն տենդերները, որոնց ժամկետներն ավարտված են և գտնվում են գնահատման փուլում: Տենդերի վերջնաժամկետից հետո կազմակերպիչը սահմանում է գնահատման արդյունքների ամփոփման ժամկետ և պարտավոր է սահմանված ժամկետում իրականացնի տենդերի ամբողջական գնահատում: Տենդերի գնահատման ընթացքին հնարավորություն ունեն հետևելու նաև տվյալ տենդերի բոլոր մասնակիցները:</p>
+
+  <p><strong>Ամփոփված տենդերներ- </strong>Այստեղ գտնվում են այն տենդերները, որոնք ամբողջությամբ գնահատվել և ամփոփվել են` ամփոփման արդյունքներն ուղարկված են մասնակիցներին:</p>
+  <div class="contact-area-left">
+    <h4>Վերոգրյալը վերաբերվում է նաև հարցումներին՝ համապատասխանաբար:</h4>
+  </div>
+  <p><em><strong>Անժամկետ տենդերներ բաժնում առկա են հետևյալ ենթաբաժինները.</strong></em></p>
+
+  <p><strong>Տենդերներ-</strong>այն անժամկետ տենդերներն են, որոնք կազմակերպիչը նշել է հետաքրքրող կատեգորիաներ ենթաբաժնում: Կազմակերպիչը կարող է այդ տենդերներում տվյալ պահին նվազագույն գին առաջարկած մասնակցից կատարել ուղիղ գնում, պատվեր:</p>
+
+  <p><strong>Պատվերներ-&nbsp;</strong>Այս ենթաբաժնում երևում են այն պատվերները, որոնք կազմակերպիչը կատարել է:&nbsp;</p>
+
+  <p><strong>Հետաքրքրող կատեգորիաներ-&nbsp;</strong>Այս ենթաբաժնում կազմակերպիչը նշում է այն կատեգորիաները, որոնց վերաբերյալ ցանկանում է տեսնել անժամկետ տենդերները և կատարել գնումներ:</p>
+
+  <p><strong><em>Որպես մասնակից գրանցված անձանց մոտ առկա են հետևյալ բաժինները.</em></strong></p>
+
+  <p><strong><em>iTender մրցույթներ բաժնում առկա են հետևյալ ենթաբաժինները.</em></strong></p>
+
+  <p><strong>Բոլոր տենդերները &ndash; </strong>Այս բաժնում մասնակցի մոտ երևում են իր կողմից նախապես ֆիլտրացված / ընտրված կատեգորիաներ, որը ընտրել է իր անձնական էջում/ բոլոր տենդերները:</p>
+
+  <p><strong>Ընթացիկ տենդերներ &ndash; </strong>Այս բաժնում հրապարակվում են նախապես ֆիլտրացված այն տենդերները, որոնք տվյալ պահին ակտիվ են, գործում են և մասնակիցը այդ տենդերներին ներկայացրել է առաջարկ:</p>
+
+  <p><strong>Ավարտված տենդերներ</strong>- Այս բաժնում հրապարակվում են նախապես ֆիլտրացված այն տենդերները, որոնց մասնակիցը ներկայացրել է առաջարկներ&nbsp; և որոնք արդեն ամփոփված են:</p>
+  <div class="contact-area-left">
+    <h4>Վերոգրյալը վերաբերվում է նաև հարցումներին՝ համապատասխանաբար:</h4>
+  </div>
+
+
+  <p><strong>Հետաքրքրողները- </strong>Այս բաժնում հավաքագրվում են մասնակցի համար հետաքրքրություն առաջացրած տենդերները և հարցումները:</p>
+
+  <p><em><strong>Անժամկետ տենդերներ բաժնում առկա են հետևյալ ենթաբաժինները.</strong></em></p>
+
+  <p><strong>Տենդերներ-</strong>&nbsp;այն անժամկետ տենդերներն են, որոնք մասնակիցը նշել է &lt;&lt;Անձնական տվյալներ&gt;&gt; բաժնում,&nbsp;որոնց համար ցանկանում է գնային առաջարկներ ներկայացնել և մասնակցել անժամկետ տենդերներին:</p>
+
+  <p><strong>Պատվերներ-&nbsp;</strong>Այս ենթաբաժնում երևում են այն պատվերները, որոնք ստացվել են գնորդների կողմից:&nbsp;</p>
+
+  <p><strong>Այլ մրցույթներ, մասնակիցներ, գներ հաղթողներ-&nbsp;</strong>Այս բաժնում գրանցված մասնակիցների մոտ երևում են այն ոլորտների մրցույթներն ու հաշվետվությունները, որոնք մասնակիցը նշել է իր անձնական էջում: Այստեղ են հավաքվում ՀՀ-ում և ԼՂՀ-ում կազմակերպված տենդերները, ավարտված տենդերների մասնակիցների, ներկայացված գների և հաղթողների վերաբերյալ տեղեկատվությունը: Նշված տեղեկատվությունը բեռնելու համար անհրաժեշտ է <a href="https://www.itender.am/packages">ձեռք բերել&nbsp;ծառայությունների փաթեթ:</a>&nbsp;</p>
+
+  <p><strong>Օգտակար հղումներ - </strong>Այս բաժնում տեղադրված են հղումներ, որոնք թույլ են տալիս&nbsp; գնումների էլեկտրոնային համակարգի /armeps/ միջոցով կազմակերպված տենդերները բացելուց անմիջապես հետո տեսնելու տենդերների մասնակիցներին, ներկայացված գները՝ չսպասելով արձանագրությունների: Առկա է հղում, որի միջոցով հնարավոր է իմանալ տենդերների&nbsp;նախահաշվային գները՝ նշելով միայն տենդերի ծածկագիրը:</p>
+
+  <p><strong>Վիճակագրություն-&nbsp;</strong>Այս բաժինում հրապարակվում են&nbsp;նույն վիճակագրական տվյալները, ինչը կայքի գլխավոր էջում է առկա:&nbsp;</p>
+
+  <p><strong>Գործընկեր- </strong>Այս բաժնում, համակարգում բոլոր գրանցված և փաթեթ ձեռք բերած անձինք, հնարավորություն ունեն&nbsp;որպես գործընկերներ, մուտքագրել&nbsp;ընկերության լոգոն,&nbsp;հասցեն,&nbsp;հեռախոսահամարը,&nbsp;կայքը,<br>&nbsp;էլեկտրոնային փոստի հասցեն,&nbsp;գործունեության տեսակը և այս ամբողջ տեղեկատվությունը երևալու է&nbsp;կայքի գլխավոր էջի &lt;&lt;Մեր գործընկերները&gt;&gt; բաժնում:</p>
+
+  <p>Կայքում առկա է &lt;live օգնություն&gt;&nbsp; ֆունկցիան, որի միջոցով կարող եք արագ կապ հաստատել համակարգի օպերատորի հետ, քննարկել և ուղղել համակարգին վերաբերող ցանկացած հարց:</p>
+
+  <p>&nbsp;</p>
+</div>
+
+
+
+
+<!--<section id="portfolio">-->
+<!--<div class="container">-->
+<!--  <div id="mixit-container" class="portfolio-container ">-->
+<!--    <div class="single-portfolio mix branding">-->
+<!--      <div class="single-item">-->
+<!--        <img src="assets/images/portfolio/portfolio-1.jpg" alt="img">-->
+<!--        <div class="single-item-content">-->
+<!--          <a class="fancybox view-icon" data-fancybox-group="gallery" href="assets/images/portfolio/portfolio-big-1.jpg"><i class="fa fa-search-plus"></i></a>-->
+<!--          <div class="portfolio-title">-->
+<!--            <h4><a href="tenderner.html">Տենդերներ</a></h4>-->
+<!--            <span>Այս բաժնում հրապարակվում են iTender համակարգի միջոցով կազմակերպված և հրապարակման ենթակա տենդերներն ու հարցումները, անժամկետ տենդերները,-->
+<!--                ՀՀ –ում և ԼՂՀ-ում պետական և մասնավոր կազմակերպությունների կողմից կազմակերպված բոլոր տենդերները՝-->
+<!--                ըստ գնման առարկայի անվանման, ծածկագրի, տենդերի ժամկետների /սկիզբ, ավարտ/:</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="single-portfolio mix design">-->
+<!--      <div class="single-item">-->
+<!--        <img src="assets/images/portfolio/portfolio-2.jpg" alt="img">-->
+<!--        <div class="single-item-content">-->
+<!--          <a class="fancybox view-icon" data-fancybox-group="gallery" href="assets/images/portfolio/portfolio-big-2.jpg"><i class="fa fa-search-plus"></i></a>-->
+<!--          <div class="portfolio-title">-->
+<!--            <h4><a href="regulation.html">iTender կանոնակարգ</a></h4>-->
+<!--            <span>Այս բաժնում հրապարակված է iTender կանոնակարգը, որտեղ հստակ սահմանված են համակարգից օգտվող բոլոր կողմերի իրավունքներն ու պարտականությունները:-->
+<!--                Այն ժամանակ առ ժամանակ փոփոխում է՝ կատարելագործվելու նկատառումներից ելնելով,-->
+<!--                այդ իսկ պատճառով անհրաժեշտ է հաճախակի այցելել և տեղեկացված լինել վերջին փոփոխությունների մասին:</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="single-portfolio mix development">-->
+<!--      <div class="single-item">-->
+<!--        <img src="assets/images/portfolio/portfolio-3.jpg" alt="img">-->
+<!--        <div class="single-item-content">-->
+<!--          <a class="fancybox view-icon" data-fancybox-group="gallery" href="assets/images/portfolio/portfolio-big-3.jpg"><i class="fa fa-search-plus"></i></a>-->
+<!--          <div class="portfolio-title">-->
+<!--            <h4><a href="">Մուտք</a></h4>-->
+<!--            <span>Այս բաժնում տեղի է ունենում կազմակերպիչների և մասնակիցների գրանցումը և մուտքը համակարգի անձնական էջ:-->
+<!--                Համակարգից իրավունք ունեն օգտվելու բացառապես գրանված անձինք:-->
+
+<!--              </span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="single-portfolio mix photography">-->
+<!--      <div class="single-item">-->
+<!--        <img src="assets/images/portfolio/portfolio-4.jpg" alt="img">-->
+<!--        <div class="single-item-content">-->
+<!--          <a class="fancybox view-icon" data-fancybox-group="gallery" href="assets/images/portfolio/portfolio-big-4.jpg"><i class="fa fa-search-plus"></i></a>-->
+<!--          <div class="portfolio-title">-->
+<!--            <h4><a href="#">Գրանցում</a></h4>-->
+<!--            <span>Համակարգում գրանցումն անվճար է: Գրանցվելիս անհրաժեշտ է մանրամասն ուսումնասիրել գրանցման պայմանները,-->
+<!--                ծանոթանալ iTender կանոնակարգի հետ-->
+<!--                Գրանցվելուց հետո մուտքագրված էլեկտրոնային փոստի հասցեին ստացվում է նամակ,-->
+<!--                որտեղ հետևելով հղմանը տեղի է ունենում գրանցման հաստատում:-->
+<!--                Այնուհետև համակարգի օպերատորի կողմից տեղի ունենում գրանցված անձանց տվյալների ստուգում:-->
+<!--                Գրանցված անձանց հաշիվները ակտիվացվում են, եթե մուտքագրված տվյալները համապատասխանում են իրականությանը,-->
+<!--                հակառակ դեպքում չեն ակտիվացվում և տվյալ անձը ստիպված պետք է ճշգրտի տվյալները:-->
+<!--              </span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="single-portfolio mix branding">-->
+<!--      <div class="single-item">-->
+<!--        <img src="assets/images/portfolio/portfolio-5.jpg" alt="img">-->
+<!--        <div class="single-item-content">-->
+<!--          <a class="fancybox view-icon" data-fancybox-group="gallery" href="assets/images/portfolio/portfolio-big-5.jpg"><i class="fa fa-search-plus"></i></a>-->
+<!--          <div class="portfolio-title">-->
+<!--            <h4>Mobile application</h4>-->
+<!--            <span>UI Design</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="single-portfolio mix design">-->
+<!--      <div class="single-item">-->
+<!--        <img src="assets/images/portfolio/portfolio-1.jpg" alt="img">-->
+<!--        <div class="single-item-content">-->
+<!--          <a class="fancybox view-icon" data-fancybox-group="gallery" href="assets/images/portfolio/portfolio-big-1.jpg"><i class="fa fa-search-plus"></i></a>-->
+<!--          <div class="portfolio-title">-->
+<!--            <h4>Mobile application</h4>-->
+<!--            <span>UI Design</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</section>-->
+<div class="container">
+  <div class="row">
+    <div class="">
+      <div class="card-help">
+        <div class="card-body"><h4 class="mt-0 header-title">Ավելի շատ հարցեր</h4>
+          <p class="text-muted">Մի անհանգստացեք: Ուղարկեք մեզ ձեր հարցերը էլ. Փոստով:</p>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="assets/images/faq.svg" alt="" class="img-fluid"></div><!--end col-->
+            <div class="col-8">
+              <form>
+                <div class="form-group row">
+                  <div class="col-lg-6 mo-b-15">
+                    <input class="form-control" type="text" id="name" placeholder="Անուն"></div>
+                  <div class="col-lg-6">
+                    <input class="form-control" type="email" id="example-email-input3" placeholder="Էլ․ հասցե">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <input class="form-control" type="text" id="subject2" placeholder="Առարկա"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control text" id="exampleFormControlTextarea1" rows="4" placeholder="Տեքստ"></textarea></div>
+                <button type="submit" class="btn btn-gradient-primary btn-block blog-more-btn">ՈՒղարկել
+                </button>
+              </form>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end card-body-->
+      </div>
+      <!--end card-->
+    </div>
+    <!--end col-->
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="container">
+    <div class="footer_center">
+      <div class="fmenu">
+        <ul>
+          <li><a href="index.html">Գլխավոր</a></li>
+          <li><a href="tenderner.html">Տենդերներ</a></li>
+          <li><a href="information.html">Տեղեկատվություն</a></li>
+          <li><a href="help.html">Օգնություն</a></li>
+          <li><a href="contact.html">Կապ</a></li>
+          <li><a href="regulation.html">Կանոնակարգ</a></li>
+        </ul>
+      </div>
+      <div class="flinks mob-link">
+        <p class="flink_t">Հղումներ</p>
+        <ul>
+          <li><a href="https://protender.am/" target="_blank">protender.am</a></li>
+          <li><a href="https://egprocurement.am/" target="_blank">egprocurement.am</a></li>
+        </ul>
+      </div>
+      <div class="flinks flinks-02">
+        <a class="flink_t" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Կոնտակտներ <i class="fa fa-plus"></i></a>
+        <ul class="pk-contact">
+          <li><a href="tel:+37410244974">+374 10 24 49 74</a></li>
+          <li><a href="tel:+37499244974">+374 99 24 49 74</a></li>
+          <li><a href="tel:+37441244974">+374 41 24 49 74</a></li>
+          <li><a href="mailto:info@itender.am">info@itender.am</a></li>
+        </ul>
+        <div class="row mob-contact">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                <li><a href="tel:+37410244974">+374 10 24 49 74</a></li>
+                <li><a href="tel:+37499244974">+374 99 24 49 74</a></li>
+                <li><a href="tel:+37441244974">+374 41 24 49 74</a></li>
+                <li><a href="mailto:info@itender.am">info@itender.am</a></li>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/logo-footer.png" height="396" width="1569"/>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="footer-right">
+              <a href="https://web.facebook.com/ProTender/"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/company/11787444/admin/updates/"><i
+                      class="fa fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/channel/UCD3gwb1H1NE9qujwPzCd3pg?view_as=subscriber"><i
+                      class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <ul class="mob-link-02">
+          <li><a href="https://protender.am/" target="_blank">protender.am</a></li>
+          <li><a href="https://egprocurement.am/" target="_blank">egprocurement.am</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer1">
+    <div class="footer1_center container">
+      <div class="footer1_left">
+        <a href="#" target="_blanck"></a>
+      </div>
+      <div class="footer1_right">
+        &#169; 2020 Բոլոր հեղինակային իրավունքները պաշտպանված են
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+
+<!-- Bootstrap -->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"-->
+<!--        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"-->
+<!--        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"-->
+<!--        integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>-->
+
+<!-- Bootstrap -->
+
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="assets/js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>  
+  
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Մասնավոր պատվիրատու</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon_1.ico"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Main style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen"/>
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/>
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/>
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../Готовые Проекты/StomMedia/seo/css/main.scss">
+
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+<div class="login-body body-02">
+    <div class="col-12 center-login">
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="auth-logo-box">
+                            <a href="index.html" class="logo logo-admin">
+                                <img src="assets/images/favicon_1.ico" alt="Itender" height="55" class="auth-logo">
+                            </a>
+                        </div>
+                        <form action="" method="post" class="user_register_form">
+
+                            <p class="reg_radio_block">
+                                <label class="reg_radio_buttons myRadio">
+                                    <input type="radio" class="r_type" value="2" name="radio"
+                                           onclick="$('.can_hide').show();$('.can_fizikakan').hide()" checked="checked"><span></span><b>Իրավաբանական
+                                    անձ</b>
+                                </label>
+                                <label class="reg_radio_buttons myRadio">
+                                    <input type="radio" class="r_type" value="1" name="radio"
+                                           onclick="$('.can_hide').hide();$('.can_fizikakan').show();"><span></span><b>Ֆիզիկական
+                                    անձ</b>
+                                </label>
+                            </p>
+
+                            <div class="reg_form_row">
+                                <label>Էլ. փոստ *</label>
+                                <input type="text" placeholder="Էլ. փոստ" aria-describedby="emailHelp" value=""
+                                       name="r_mail" required>
+                            </div>
+
+                            <div class="reg_form_row">
+                                <label>Հեռախոս *</label>
+                                <input type="text" placeholder="077 24 88 11" value="" name="r_phone"
+                                       pattern="[+]{1}[0-9]{11,14}" required>
+
+                            </div>
+
+                            <div class="reg_form_row">
+                                <label>Գաղտնաբառ *</label>
+                                <div class="password55">
+                                    <div class="pass_block">
+                                        <input type="password" placeholder="Նվազագույնը՝ 6 սինվոլ" value=""
+                                               name="r_pass" required>
+                                        <span class="show_hide_pass"><i toggle-type="reg_pass1" class="fa fa-eye"
+                                                                        aria-hidden="true"></i></span>
+                                    </div>
+                                    <small class="checked_pass"><i class="fa fa-check" aria-hidden="true"></i></small>
+                                    <small class="times_pass"><i class="fa fa-times" aria-hidden="true"></i></small>
+                                </div>
+
+                            </div>
+
+                            <div class="reg_form_row">
+                                <label>Կրկնել գաղտնաբառ *</label>
+                                <div class="password55">
+                                    <div class="pass_block">
+                                        <input type="password" placeholder="Կրկնել գաղտնաբառ" value=""
+                                               class="reg_pass2 reg_pass" name="r_pass_repeat" required>
+                                        <span class="show_hide_pass"><i toggle-type="reg_pass2" class="fa fa-eye"
+                                                                        aria-hidden="true"></i></span>
+                                    </div>
+                                    <small class="checked_pass"><i class="fa fa-check" aria-hidden="true"></i></small>
+                                    <small class="times_pass"><i class="fa fa-times" aria-hidden="true"></i></small>
+                                </div>
+
+                            </div>
+
+                            <div class="can_hide">
+                                <div class="reg_form_row">
+                                    <label>Իրավաբանական անվանում *</label>
+                                    <input type="text" name="user_name" class="user_name masnakic_user_name" value=""
+                                           required>
+                                    <select name="company_type" class="user_name user_name_short">
+                                        <option value="">Ընտրել</option>
+                                        <option value="ՍՊԸ">ՍՊԸ</option>
+                                        <option value="ՊՈԱԿ">ՊՈԱԿ</option>
+                                        <option value="Ա/Ձ">Ա/Ձ</option>
+                                        <option value="ԲԲԸ">ԲԲԸ</option>
+                                        <option value="Ա/Կ">Ա/Կ</option>
+                                        <option value="ՓԲԸ">ՓԲԸ</option>
+                                        <option value="Հիմնադրամ">Հիմնադրամ</option>
+                                    </select>
+                                </div>
+                                <div class="reg_form_row">
+                                    <label>Իրավաբանական անվանում ռուսերեն *</label>
+                                    <input type="text" name="user_name_ru" class="user_name masnakic_user_name_ru"
+                                           value="" required>
+                                    <select name="company_type_ru" class="user_name user_name_short">
+                                        <option>Выбрать</option>
+                                        <option value="ООО">ООО</option>
+                                        <option value="ГНКО">ГНКО</option>
+                                        <option value="И/П">И/П</option>
+                                        <option value="ОАО">ОАО</option>
+                                        <option value="П/О">П/О</option>
+                                        <option value="К/О">К/О</option>
+                                        <option value="ЗАО">ЗАО</option>
+                                        <option value="ФОНД">ФОНД</option>
+                                    </select>
+                                </div>
+                                <div class="reg_form_row">
+                                    <label>ՀՎՀՀ *</label>
+                                    <input type="text" class="user_hvhh" maxlength="8"
+                                           onkeyup="check_numeric_hvhh(this)" value="" required>
+
+                                </div>
+                            </div>
+
+                            <div class="can_fizikakan" style="display: none">
+                                <div class="reg_form_row">
+                                    <label>Անուն Ազգանուն *</label>
+                                    <input type="text" name="fiz_user_director" placeholder="Անուն Ազգանուն" value=""
+                                           required>
+
+                                </div>
+                            </div>
+
+                            <div class="reg_form_row">
+                                <label>Հասցե *</label>
+                                <div class="row address">
+                                    <div class="">
+                                        <input placeholder="Մարզ" type="text" name="company_region" value="" required>
+                                    </div>
+                                    <div class="">
+                                        <input placeholder="Քաղաք / Գյուղ" type="text" name="company_city" value=""
+                                               required>
+                                    </div>
+                                    <div class="">
+                                        <input placeholder="Հասցե" type="text" name="company_address" value="" required>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="reg_form_row">
+                                <label>Հասցե ռուսերեն*</label>
+                                <div class="row address">
+                                    <div class="">
+                                        <input placeholder="Մարզ ռուսերեն" type="text" name="company_region_ru"
+                                               class="user_name company_region_ru user_name_short" value="" required>
+                                    </div>
+                                    <div class="">
+                                        <input placeholder="Քաղաք / Գյուղ" type="text" name="company_city_ru"
+                                               class="user_name company_city_ru user_name_short" value="" required="">
+                                    </div>
+                                    <div class="">
+                                        <input placeholder="Հասցե ռուսերեն" type="text" name="company_address_ru"
+                                               class="user_name company_address_ru user_name_long" value="" required="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="can_fizikakan" style="display: none">
+                                <div class="reg_form_row">
+                                    <label>Անձնագրի սերիա*</label>
+                                    <input placeholder="Անձնագրի սերիա" type="text" name="passport_serial"
+                                           class="passport_serial user_name" value="" required="">
+                                </div>
+                                <div class="reg_form_row">
+                                    <label>Տրված է*</label>
+                                    <input placeholder="Տրված է" type="text" name="passport_start"
+                                           class="passport_start user_name" value="" required="">
+                                </div>
+                                <div class="reg_form_row">
+                                    <label>Ում կողմից*</label>
+                                    <input placeholder="Ում կողմից" type="text" name="passport_who"
+                                           class="passport_who user_name" value="" required="">
+                                </div>
+                                <div class="reg_form_row">
+                                    <label>Վավերական է մինչև*</label>
+                                    <input placeholder="Վավերական է մինչև" type="text" name="passport_end"
+                                           class="passport_end user_name" value="" required="">
+                                </div>
+                                <div class="reg_form_row">
+                                    <label>Սոց. քարտի համար*</label>
+                                    <input placeholder="Սոց. քարտի համար" type="text" name="soc_qart_number"
+                                           class="soc_qart_number user_name" value="" required="">
+                                </div>
+                            </div>
+
+                            <div class="reg_form_row">
+                                <label>Բանկ / Գանձապետարան *</label>
+                                <input placeholder="Բանկ / Գանձապետարան" type="text" name="bank_name"
+                                       class="bank_name user_name" value="" required="">
+                            </div>
+
+                            <div class="reg_form_row">
+                                <label>Բանկ / Գանձապետարան ռուսերեն *</label>
+                                <input placeholder="Բանկ / Գանձապետարան ռուսերեն" type="text" name="bank_name_ru"
+                                       class="bank_name user_name" value="" required="">
+                            </div>
+
+                            <div class="reg_form_row">
+                                <label>Հաշվեհամար *</label>
+                                <input placeholder="Հաշվեհամար" type="text" name="bank_account"
+                                       class="bank_account user_address" onkeyup="check_numeric_hvhh(this)"
+                                       maxlength="16" value="" required="">
+                            </div>
+
+                            <div class="can_hide">
+                                <div class="reg_form_row">
+                                    <label>Տնօրենի Անուն Ազգանուն *</label>
+                                    <input type="text" name="user_director" class="user_liaz_name"
+                                           placeholder="Անուն Ազգանուն" value="">
+
+                                </div>
+                                <div class="reg_form_row">
+                                    <label>Տնօրենի Անուն Ազգանուն ռուսերեն*</label>
+                                    <input type="text" name="user_director_ru" class="user_liaz_name_ru"
+                                           placeholder="Անուն Ազգանուն ռուսերեն" value="">
+
+                                </div>
+                            </div>
+
+                            <label class="myCheckbox" style="margin-top: 12px;">
+                                <input type="checkbox" name="r_remember" value="1" class="r_checkbox">
+                                <span></span>
+                                <p class="i_agree i_agree_tender">Ուսումնասիրել եմ <a href="regulation.html"
+                                                                                      target="_blank">iTender
+                                    կանոնակարգը</a>, տեղեկացված եմ կազմակերպիչների և մասնակիցների իրավունքների և
+                                    պարտականությունների մասին, ծանոթացել եմ համակարգի օգտագործման պայմանների հետ,
+                                    համաձայն եմ գրանցվել և օգտվել համակարգից </p>
+
+                            </label>
+                            <input type="hidden" name="register_user" value="ok">
+                            <input type="submit" name="register_ok" class="save_user_info_reg" id="send_order"
+                                   value="Գրանցվել">
+                            <p style="color:red;float:right;margin-top:50px;margin-right:13px">*-ով նշված դաշտերը ենթակա
+                                են պարտադիր լրացման</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.js"></script>
+
+<script src="assets/js/script.js"></script>
+
+<!-- Slick Slider -->
+<script type="text/javascript" src="assets/js/slick.js"></script>
+<!-- mixit slider -->
+<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+<!-- Add fancyBox -->
+<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+<!-- counter -->
+<script src="assets/js/waypoints.js"></script>
+<script src="assets/js/jquery.counterup.js"></script>
+<!-- Wow animation -->
+<script type="text/javascript" src="assets/js/wow.js"></script>
+<!-- progress bar   -->
+<script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>
+
+
+<!-- Custom js -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>
