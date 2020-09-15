@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f557c18d-1327-4d4f-9b58-4dae30206e05" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1guClgX7VGBklXMOdMMvAc6enVD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\untitled\path-to-the-file" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\.WebStorm2019.3\config\javascript\extLibs" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f557c18d-1327-4d4f-9b58-4dae30206e05" name="Default Changelist" comment="" />
+      <created>1598955242282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598955242282</updated>
+      <workItem from="1598955247050" duration="30001000" />
+      <workItem from="1599132618334" duration="11127000" />
+      <workItem from="1600187815652" duration="527000" />
+      <workItem from="1600188489636" duration="154000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="380" y="55" key="#Intentions" timestamp="1599120307081">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="380" y="55" key="#Intentions/0.0.1366.738@0.0.1366.738" timestamp="1599120307081" />
+    <state x="324" y="136" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1599123689228">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="324" y="136" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599123689228" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1600188367399">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1600188367399" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1599242971724">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1599242971724" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599117260186">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599117260186" />
+  </component>
+</project>
